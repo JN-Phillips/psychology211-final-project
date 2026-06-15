@@ -471,161 +471,105 @@
   .acquired-text p { font-size: 0.9rem; color: rgba(255,255,255,0.72); line-height: 1.7; margin-bottom: 0.75rem; }
   .acquired-text p:last-child { margin-bottom: 0; }
 
-  /* REAL CASES */
-  .cases-section { padding: 7rem 2rem; background: #EEF2F7; }
+  /* TWO PATHWAYS */
+  .pathways-section { padding: 7rem 2rem; background: #EEF2F7; }
 
-  .cases-grid {
-    max-width: 1040px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+  /* DECISION TREE */
+  .decision-section { padding: 7rem 2rem; background: var(--navy); }
+  .decision-section .section-label { color: var(--sage); }
+  .decision-section .section-title { color: #fff; }
+  .decision-section .section-intro { color: rgba(255,255,255,0.6); }
+  .decision-container { max-width: 760px; margin: 0 auto; }
+  .decision-node {
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.14);
+    border-radius: 14px;
+    padding: 1.5rem 1.75rem;
   }
-
-  .case-card {
-    background: var(--warm-white);
-    border-radius: 16px;
-    border: 1px solid var(--border);
-    overflow: hidden;
-    transition: transform 0.25s, box-shadow 0.25s;
-  }
-
-  .case-card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(0,0,0,0.09); }
-
-  .case-photo {
-    width: 100%;
-    height: 220px;
-    background: #D6D2C8;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-  }
-
-  .case-photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center top;
-    display: block;
-  }
-
-  .case-photo-placeholder {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 0.5rem;
-    color: var(--text-light);
-    font-size: 0.78rem;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    font-weight: 500;
-  }
-
-  .case-photo-placeholder svg { opacity: 0.35; }
-
-  .case-classification {
-    position: absolute;
-    top: 1rem;
-    left: 1rem;
-    font-size: 0.6rem;
-    font-weight: 700;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    padding: 0.3rem 0.7rem;
-    border-radius: 20px;
-  }
-
-  .classification-pedophilic { background: rgba(123,167,160,0.92); color: #fff; }
-  .classification-opportunistic { background: rgba(232,168,56,0.92); color: var(--navy); }
-  .classification-ambiguous { background: rgba(27,42,74,0.85); color: #fff; }
-
-  .case-body { padding: 1.75rem; }
-
-  .case-name {
-    font-family: 'DM Serif Display', serif;
-    font-size: 1.3rem;
-    color: var(--navy);
-    margin-bottom: 0.2rem;
-    line-height: 1.2;
-  }
-
-  .case-descriptor {
-    font-size: 0.75rem;
-    color: var(--text-light);
-    font-weight: 500;
-    margin-bottom: 1.25rem;
-    letter-spacing: 0.03em;
-  }
-
-  .case-section-block { margin-bottom: 1rem; }
-  .case-section-block:last-child { margin-bottom: 0; }
-
-  .case-block-label {
-    font-size: 0.62rem;
-    font-weight: 700;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--text-light);
-    margin-bottom: 0.35rem;
-  }
-
-  .case-block-text {
-    font-size: 0.86rem;
-    color: var(--text-mid);
-    line-height: 1.65;
-  }
-
-  .case-verdict {
-    margin-top: 1.25rem;
-    padding: 1rem 1.25rem;
+  .decision-question { font-family: 'DM Serif Display', serif; font-size: 1.15rem; color: #fff; margin-bottom: 1rem; line-height: 1.3; }
+  .decision-buttons { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+  .decision-btn {
+    padding: 0.55rem 1.25rem;
     border-radius: 8px;
-    border-left: 3px solid;
-  }
-
-  .verdict-pedophilic { background: rgba(123,167,160,0.12); border-color: var(--sage); }
-  .verdict-opportunistic { background: rgba(232,168,56,0.1); border-color: var(--amber); }
-  .verdict-ambiguous { background: rgba(27,42,74,0.06); border-color: var(--slate); }
-
-  .case-verdict-label {
-    font-size: 0.62rem;
-    font-weight: 700;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    margin-bottom: 0.35rem;
-  }
-
-  .verdict-pedophilic .case-verdict-label { color: var(--sage); }
-  .verdict-opportunistic .case-verdict-label { color: #9A6B10; }
-  .verdict-ambiguous .case-verdict-label { color: var(--slate); }
-
-  .case-verdict p { font-size: 0.84rem; color: var(--text-mid); line-height: 1.6; }
-
-  /* LEGEND */
-  .cases-legend {
-    max-width: 1040px;
-    margin: 0 auto 2.5rem;
-    display: flex;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-  }
-
-  .legend-item {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    font-size: 0.78rem;
-    color: var(--text-mid);
+    border: 1px solid rgba(255,255,255,0.25);
+    background: transparent;
+    color: rgba(255,255,255,0.8);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.84rem;
     font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
   }
+  .decision-btn:hover { background: rgba(255,255,255,0.1); color: #fff; border-color: rgba(255,255,255,0.4); }
+  .decision-btn.yes { border-color: var(--sage); color: var(--sage-light); }
+  .decision-btn.yes:hover { background: rgba(123,167,160,0.2); }
+  .decision-btn.no { border-color: var(--amber); color: var(--amber-light); }
+  .decision-btn.no:hover { background: rgba(232,168,56,0.15); }
+  .decision-connector { width: 2px; height: 28px; background: rgba(255,255,255,0.12); margin: 0 auto; }
+  .decision-outcome {
+    border-radius: 14px;
+    padding: 1.75rem;
+    display: none;
+  }
+  .outcome-pedophilic { background: rgba(123,167,160,0.18); border: 1px solid rgba(123,167,160,0.4); }
+  .outcome-opportunistic { background: rgba(232,168,56,0.12); border: 1px solid rgba(232,168,56,0.35); }
+  .outcome-both { background: rgba(61,90,128,0.25); border: 1px solid rgba(61,90,128,0.4); }
+  .outcome-label { font-size: 0.63rem; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 0.5rem; }
+  .outcome-pedophilic .outcome-label { color: var(--sage); }
+  .outcome-opportunistic .outcome-label { color: var(--amber); }
+  .outcome-both .outcome-label { color: var(--sage-light); }
+  .outcome-title { font-family: 'DM Serif Display', serif; font-size: 1.2rem; color: #fff; margin-bottom: 0.65rem; }
+  .outcome-desc { font-size: 0.87rem; color: rgba(255,255,255,0.72); line-height: 1.65; }
+  .decision-reset { margin-top: 1.5rem; text-align: center; }
+  .decision-reset button {
+    padding: 0.55rem 1.4rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,0.2);
+    background: transparent;
+    color: rgba(255,255,255,0.5);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.82rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: none;
+  }
+  .decision-reset button:hover { color: rgba(255,255,255,0.85); border-color: rgba(255,255,255,0.35); }
 
-  .legend-dot {
-    width: 10px; height: 10px;
-    border-radius: 50%;
-    flex-shrink: 0;
+  /* TIMELINE */
+  .timeline-section { padding: 7rem 2rem; background: var(--warm-white); }
+  .timeline-track { max-width: 960px; margin: 0 auto; position: relative; }
+  .timeline-line { position: absolute; top: 28px; left: 0; right: 0; height: 2px; background: var(--border); }
+  .timeline-progress { position: absolute; top: 0; left: 0; height: 100%; background: var(--sage); width: 0%; transition: width 0.5s ease; }
+  .timeline-dots { display: flex; justify-content: space-between; position: relative; margin-bottom: 3rem; }
+  .tl-dot-wrap { display: flex; flex-direction: column; align-items: center; cursor: pointer; width: 80px; }
+  .tl-dot {
+    width: 14px; height: 14px; border-radius: 50%;
+    background: var(--border); border: 2px solid #fff;
+    box-shadow: 0 0 0 2px var(--border);
+    transition: all 0.25s; margin-bottom: 0.6rem; position: relative; z-index: 1;
   }
+  .tl-dot-wrap.active .tl-dot { background: var(--sage); box-shadow: 0 0 0 3px rgba(123,167,160,0.35); }
+  .tl-dot-wrap.passed .tl-dot { background: var(--sage); box-shadow: 0 0 0 2px var(--sage-light); }
+  .tl-year { font-family: 'DM Serif Display', serif; font-size: 0.85rem; color: var(--text-light); transition: color 0.25s; }
+  .tl-dot-wrap.active .tl-year, .tl-dot-wrap.passed .tl-year { color: var(--navy); }
+  .timeline-panel {
+    background: #fff; border: 1px solid var(--border); border-radius: 16px;
+    padding: 2.5rem; min-height: 180px; box-shadow: 0 4px 24px rgba(0,0,0,0.05);
+  }
+  .timeline-panel-year { font-family: 'DM Serif Display', serif; font-size: 2.2rem; color: var(--sage); line-height: 1; margin-bottom: 0.5rem; }
+  .timeline-panel-title { font-family: 'DM Serif Display', serif; font-size: 1.3rem; color: var(--navy); margin-bottom: 0.75rem; }
+  .timeline-panel-body { font-size: 0.9rem; color: var(--text-mid); line-height: 1.75; }
+  .timeline-panel-cite { font-size: 0.75rem; color: var(--text-light); margin-top: 1rem; font-style: italic; }
+  .timeline-nav { display: flex; gap: 0.75rem; justify-content: center; margin-top: 2rem; }
+  .tl-nav-btn {
+    padding: 0.55rem 1.5rem; border-radius: 8px;
+    border: 1px solid var(--border); background: #fff;
+    color: var(--text-mid); font-family: 'Inter', sans-serif;
+    font-size: 0.84rem; font-weight: 500; cursor: pointer; transition: all 0.2s;
+  }
+  .tl-nav-btn:hover { background: var(--navy); color: #fff; border-color: var(--navy); }
+  .tl-nav-btn:disabled { opacity: 0.35; cursor: default; }
+  .tl-nav-btn:disabled:hover { background: #fff; color: var(--text-mid); border-color: var(--border); }
 
   /* PROFILES */
   .profiles-section { padding: 7rem 2rem; background: #EEF2F7; }
@@ -769,7 +713,9 @@
     <li><a href="#why">Why It Matters</a></li>
     <li><a href="#distinction">The Distinction</a></li>
     <li><a href="#neuroscience">Neuroscience</a></li>
-    <li><a href="#cases">Real Cases</a></li>
+    <li><a href="#pathways">Two Pathways</a></li>
+    <li><a href="#decision">Who Offends</a></li>
+    <li><a href="#timeline">History</a></li>
     <li><a href="#glossary">Glossary</a></li>
     <li><a href="#references">References</a></li>
   </ul>
@@ -1065,244 +1011,260 @@
   </div>
 </section>
 
-<!-- REAL CASES -->
-<section class="cases-section" id="cases">
-  <div style="text-align:center; margin-bottom:2rem;">
-    <p class="section-label reveal">Real Cases</p>
-    <h2 class="section-title centered reveal">Applying the distinction to documented cases</h2>
-    <p class="section-intro centered reveal">Public cases of child sexual abuse are often reported without any clinical framing. Using the psychological distinction between pedophilic disorder and opportunistic offending, we can examine what the evidence actually suggests about each case. These analyses are based on documented court records, clinical evaluations where public, and peer-reviewed forensic literature, not media speculation.</p>
+<!-- TWO PATHWAYS DIAGRAM -->
+<section class="pathways-section" id="pathways">
+  <div style="text-align:center; margin-bottom:3.5rem;">
+    <p class="section-label reveal">Two Pathways</p>
+    <h2 class="section-title centered reveal">Same outcome. Completely different origins.</h2>
+    <p class="section-intro centered reveal">Two people can both be identified as child sexual abusers while arriving from entirely different psychological starting points. Psychology distinguishes these pathways because the intervention strategies, treatment approaches, and prevention methods differ substantially depending on which pathway applies (Tenbergen et al., 2015; Murray, 2000).</p>
   </div>
+  <div style="max-width:960px; margin:0 auto;">
+    <svg viewBox="0 0 960 560" xmlns="http://www.w3.org/2000/svg" style="width:100%; display:block;" aria-label="Two pathways diagram showing pedophilic disorder vs opportunistic offending">
+      <!-- Background panels -->
+      <rect x="20" y="20" width="400" height="520" rx="16" fill="rgba(123,167,160,0.1)" stroke="#7BA7A0" stroke-width="1.5"/>
+      <rect x="540" y="20" width="400" height="520" rx="16" fill="rgba(232,168,56,0.08)" stroke="#E8A838" stroke-width="1.5"/>
 
-  <div class="cases-legend reveal">
-    <div class="legend-item">
-      <div class="legend-dot" style="background: var(--sage);"></div>
-      Evidence consistent with pedophilic disorder
-    </div>
-    <div class="legend-item">
-      <div class="legend-dot" style="background: var(--amber);"></div>
-      Evidence consistent with opportunistic offending
-    </div>
-    <div class="legend-item">
-      <div class="legend-dot" style="background: var(--slate);"></div>
-      Clinically ambiguous or unresolved
-    </div>
-  </div>
+      <!-- Panel headers -->
+      <rect x="20" y="20" width="400" height="56" rx="16" fill="#7BA7A0"/>
+      <rect x="20" y="56" width="400" height="20" fill="#7BA7A0"/>
+      <text x="220" y="53" text-anchor="middle" font-family="DM Serif Display, serif" font-size="17" fill="#fff">Pathway A: Pedophilic Disorder</text>
 
-  <div class="cases-grid">
+      <rect x="540" y="20" width="400" height="56" rx="16" fill="#E8A838"/>
+      <rect x="540" y="56" width="400" height="20" fill="#E8A838"/>
+      <text x="740" y="53" text-anchor="middle" font-family="DM Serif Display, serif" font-size="17" fill="#1B2A4A">Pathway B: Opportunistic Offending</text>
 
-    <!-- SANDUSKY -->
-    <div class="case-card reveal">
-      <div class="case-photo">
-        <img src="jerry_sandusky.jpg" alt="Jerry Sandusky">
-        <span class="case-classification classification-pedophilic">Consistent with pedophilic disorder</span>
-      </div>
-      <div class="case-body">
-        <p class="case-name">Jerry Sandusky</p>
-        <p class="case-descriptor">Former Penn State defensive football coordinator. Convicted 2012.</p>
-        <div class="case-section-block">
-          <p class="case-block-label">What Happened</p>
-          <p class="case-block-text">Sandusky was convicted on 45 counts of child sexual abuse spanning more than a decade. He used his nonprofit organization, The Second Mile, to identify and groom vulnerable boys, building emotional dependency before escalating to sexual contact. Victims ranged from 8 to 13 years old.</p>
-        </div>
-        <div class="case-section-block">
-          <p class="case-block-label">Why This Is Not Simply Child Molestation</p>
-          <p class="case-block-text">The sustained, deliberate grooming of prepubescent boys over more than a decade, the specific age range of victims, the construction of an institutional pipeline to access children, and the consistency of the pattern across multiple unrelated victims all point toward a persistent, child-specific sexual preference rather than opportunistic or situational offending. This is precisely the kind of chronic, organized pattern that the DSM-5 duration criterion is designed to capture.</p>
-        </div>
-        <div class="case-verdict verdict-pedophilic">
-          <p class="case-verdict-label">Clinical Assessment</p>
-          <p>The behavioral evidence is most consistent with pedophilic disorder of the exclusive or near-exclusive type, with a specific attraction to prepubescent boys and sustained offense behavior spanning years.</p>
-        </div>
-      </div>
-    </div>
+      <!-- Step nodes: Pathway A -->
+      <rect x="55" y="105" width="330" height="68" rx="10" fill="#fff" stroke="#B8D4D1" stroke-width="1"/>
+      <text x="75" y="127" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#7BA7A0" letter-spacing="1">ORIGIN</text>
+      <text x="75" y="146" font-family="Inter, sans-serif" font-size="12.5" fill="#1B2A4A">Neurodevelopmental difference</text>
+      <text x="75" y="163" font-family="Inter, sans-serif" font-size="11.5" fill="#4A5568">Brain structure atypical from early life</text>
 
-    <!-- NASSAR -->
-    <div class="case-card reveal">
-      <div class="case-photo">
-        <div class="case-photo-placeholder">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
-          <span>Photo placeholder</span>
-          <span style="font-size:0.65rem; opacity:0.6;">Replace with image file</span>
-        </div>
-        <span class="case-classification classification-pedophilic">Consistent with pedophilic disorder</span>
-      </div>
-      <div class="case-body">
-        <p class="case-name">Larry Nassar</p>
-        <p class="case-descriptor">Former USA Gymnastics national team doctor. Sentenced 2018.</p>
-        <div class="case-section-block">
-          <p class="case-block-label">What Happened</p>
-          <p class="case-block-text">Nassar was sentenced to up to 175 years in prison after more than 150 women and girls provided victim impact statements. He used his position as a sports medicine physician to abuse patients during medical appointments, falsely framing abuse as legitimate medical procedures over nearly three decades.</p>
-        </div>
-        <div class="case-section-block">
-          <p class="case-block-label">Why This Is Not Simply Child Molestation</p>
-          <p class="case-block-text">The scope, duration, and consistency of Nassar's offending across hundreds of victims and nearly 30 years far exceeds what is typically seen in opportunistic offending. He constructed an elaborate professional identity specifically structured to provide access to young female athletes and gymnasts. The deliberate, premeditated nature of the abuse and the specific victim profile suggest a persistent sexual preference, not situational access to children.</p>
-        </div>
-        <div class="case-verdict verdict-pedophilic">
-          <p class="case-verdict-label">Clinical Assessment</p>
-          <p>The behavioral pattern across decades and hundreds of victims is most consistent with pedophilic or hebephilic disorder, with a specific and sustained sexual attraction to young female athletes.</p>
-        </div>
-      </div>
-    </div>
+      <rect x="55" y="208" width="330" height="68" rx="10" fill="#fff" stroke="#B8D4D1" stroke-width="1"/>
+      <text x="75" y="230" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#7BA7A0" letter-spacing="1">ATTRACTION</text>
+      <text x="75" y="249" font-family="Inter, sans-serif" font-size="12.5" fill="#1B2A4A">Primary sexual preference for children</text>
+      <text x="75" y="266" font-family="Inter, sans-serif" font-size="11.5" fill="#4A5568">Persistent, intense, recognized in adolescence</text>
 
-    <!-- R. KELLY -->
-    <div class="case-card reveal">
-      <div class="case-photo">
-        <img src="kelly.jpeg" alt="R. Kelly">
-        <span class="case-classification classification-opportunistic">Consistent with opportunistic offending</span>
-      </div>
-      <div class="case-body">
-        <p class="case-name">R. Kelly</p>
-        <p class="case-descriptor">R&amp;B musician. Convicted 2021 on federal racketeering and sex trafficking charges.</p>
-        <div class="case-section-block">
-          <p class="case-block-label">What Happened</p>
-          <p class="case-block-text">Kelly was convicted of sex trafficking, racketeering, and sexual abuse spanning decades. Victims included minors and adults. He used his celebrity status, financial resources, and a network of associates to recruit, control, and abuse victims of varying ages, some as young as 14.</p>
-        </div>
-        <div class="case-section-block">
-          <p class="case-block-label">Why This Is Not Pedophilic Disorder</p>
-          <p class="case-block-text">A critical distinction: Kelly's documented victims included adult women as well as minors. The pattern of behavior reflects coercive control, power exploitation, and a predatory use of fame rather than a specific sexual attraction to prepubescent children. When adult victims are present alongside minor victims, the clinical picture is more consistent with exploitative opportunism and antisocial personality traits than with a child-specific sexual preference as defined by the DSM-5.</p>
-        </div>
-        <div class="case-verdict verdict-opportunistic">
-          <p class="case-verdict-label">Clinical Assessment</p>
-          <p>The evidence is more consistent with predatory opportunistic offending enabled by power and control, with victims across a wide age range, than with pedophilic disorder defined by a persistent attraction to prepubescent children specifically.</p>
-        </div>
-      </div>
-    </div>
+      <rect x="55" y="311" width="330" height="68" rx="10" fill="#fff" stroke="#B8D4D1" stroke-width="1"/>
+      <text x="75" y="333" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#7BA7A0" letter-spacing="1">BEHAVIOR FACTOR</text>
+      <text x="75" y="352" font-family="Inter, sans-serif" font-size="12.5" fill="#1B2A4A">Distress, poor impulse regulation</text>
+      <text x="75" y="369" font-family="Inter, sans-serif" font-size="11.5" fill="#4A5568">Or antisocial traits that override non-offending intent</text>
 
-    <!-- EPSTEIN -->
-    <div class="case-card reveal">
-      <div class="case-photo">
-        <img src="epstein.jpeg" alt="Jeffrey Epstein">
-        <span class="case-classification classification-opportunistic">Consistent with opportunistic offending</span>
-      </div>
-      <div class="case-body">
-        <p class="case-name">Jeffrey Epstein</p>
-        <p class="case-descriptor">Financier. Arrested 2019 on federal sex trafficking charges. Died in custody 2019.</p>
-        <div class="case-section-block">
-          <p class="case-block-label">What Happened</p>
-          <p class="case-block-text">Epstein was charged with sex trafficking of minors in Florida and New York. He was accused of recruiting and abusing hundreds of underage girls through a network of associates. He had previously received a controversial plea deal in 2008 that allowed him to avoid federal prosecution.</p>
-        </div>
-        <div class="case-section-block">
-          <p class="case-block-label">Why This Is Not Pedophilic Disorder</p>
-          <p class="case-block-text">Epstein's documented victims were predominantly adolescent girls, not prepubescent children. Pedophilic disorder as defined in the DSM-5 specifically involves attraction to prepubescent children (generally age 13 and under, Tanner stage 1 or 2). Epstein's pattern is better described as hebephilic exploitation enabled by extreme wealth, social access, and coercive power structures, rather than a clinical pedophilic preference. The systematic nature of his network reflects sophisticated predatory organization, not impulsive opportunism.</p>
-        </div>
-        <div class="case-verdict verdict-opportunistic">
-          <p class="case-verdict-label">Clinical Assessment</p>
-          <p>Based on available public evidence, Epstein's offense pattern is more consistent with exploitative hebephilia and predatory use of power than with DSM-5 pedophilic disorder, which requires a specific attraction to prepubescent children.</p>
-        </div>
-      </div>
-    </div>
+      <!-- Branch for A: non-offending -->
+      <rect x="55" y="414" width="148" height="60" rx="10" fill="rgba(123,167,160,0.15)" stroke="#7BA7A0" stroke-width="1.5"/>
+      <text x="129" y="439" text-anchor="middle" font-family="Inter, sans-serif" font-size="11.5" font-weight="600" fill="#1B2A4A">No offense</text>
+      <text x="129" y="456" text-anchor="middle" font-family="Inter, sans-serif" font-size="10.5" fill="#4A5568">Many never act</text>
+      <text x="129" y="471" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#718096">(Tenbergen et al., 2015)</text>
 
-    <!-- GARY GLITTER -->
-    <div class="case-card reveal">
-      <div class="case-photo">
-        <img src="glitter.jpg" alt="Gary Glitter">
-        <span class="case-classification classification-pedophilic">Consistent with pedophilic disorder</span>
-      </div>
-      <div class="case-body">
-        <p class="case-name">Gary Glitter</p>
-        <p class="case-descriptor">British rock musician. Convicted of child sexual offenses in 1999, 2006, and 2015.</p>
-        <div class="case-section-block">
-          <p class="case-block-label">What Happened</p>
-          <p class="case-block-text">Gary Glitter (born Paul Gadd) has been convicted of child sexual offenses in three countries over nearly two decades. His 1999 conviction in the United Kingdom stemmed from child pornography found on his laptop. His 2006 conviction in Vietnam involved the abuse of two girls aged 10 and 11. His 2015 United Kingdom conviction involved historic offenses against girls as young as 8 years old.</p>
-        </div>
-        <div class="case-section-block">
-          <p class="case-block-label">Why This Is Not Simply Opportunistic Offending</p>
-          <p class="case-block-text">The cross-national, multi-decade pattern of offenses consistently targeting prepubescent girls, combined with possession of child sexual abuse material, fits the clinical profile of pedophilic disorder far more closely than situational or opportunistic offending. The possession of child sexual abuse material is itself considered a reliable indicator of pedophilic sexual interest in the clinical literature (Seto et al., 2006, as cited in Tenbergen et al., 2015).</p>
-        </div>
-        <div class="case-verdict verdict-pedophilic">
-          <p class="case-verdict-label">Clinical Assessment</p>
-          <p>The consistent victim profile, the cross-national offending pattern spanning decades, and the documented possession of child sexual abuse material are collectively most consistent with pedophilic disorder.</p>
-        </div>
-      </div>
-    </div>
+      <!-- Branch A: offense -->
+      <rect x="237" y="414" width="148" height="60" rx="10" fill="rgba(27,42,74,0.12)" stroke="#3D5A80" stroke-width="1.5"/>
+      <text x="311" y="439" text-anchor="middle" font-family="Inter, sans-serif" font-size="11.5" font-weight="600" fill="#1B2A4A">Offense occurs</text>
+      <text x="311" y="456" text-anchor="middle" font-family="Inter, sans-serif" font-size="10.5" fill="#4A5568">Planned, grooming-based</text>
+      <text x="311" y="471" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#718096">~50% of abusers</text>
 
-    <!-- ROMAN POLANSKI -->
-    <div class="case-card reveal">
-      <div class="case-photo">
-        <div class="case-photo-placeholder">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
-          <span>Photo placeholder</span>
-          <span style="font-size:0.65rem; opacity:0.6;">Replace with image file</span>
-        </div>
-        <span class="case-classification classification-ambiguous">Clinically ambiguous</span>
-      </div>
-      <div class="case-body">
-        <p class="case-name">Roman Polanski</p>
-        <p class="case-descriptor">Film director. Pled guilty 1977 to unlawful sexual intercourse with a minor. Fled the US before sentencing.</p>
-        <div class="case-section-block">
-          <p class="case-block-label">What Happened</p>
-          <p class="case-block-text">In 1977, Polanski pled guilty to unlawful sexual intercourse with a 13-year-old girl after being charged with rape, sodomy, and administering a controlled substance. He fled the United States before sentencing and has lived outside US jurisdiction since. Additional accusers have come forward in subsequent decades alleging abuse that occurred during the same era.</p>
-        </div>
-        <div class="case-section-block">
-          <p class="case-block-label">Why the Clinical Picture Is Ambiguous</p>
-          <p class="case-block-text">This case illustrates the difficulty of applying clinical distinctions without a formal evaluation. Polanski's documented victim was 13, placing the offense at the boundary between pedophilia (attraction to prepubescent children) and hebephilia (attraction to pubescent adolescents). A single documented offense, while serious, does not by itself meet the DSM-5 duration criterion for pedophilic disorder. Whether additional accusers represent a consistent pattern or isolated incidents is not established with sufficient clinical evidence to draw conclusions about sexual preference.</p>
-        </div>
-        <div class="case-verdict verdict-ambiguous">
-          <p class="case-verdict-label">Clinical Assessment</p>
-          <p>The available public record is insufficient to distinguish pedophilic or hebephilic disorder from opportunistic offending. This case is a useful illustration of why public information alone rarely permits a clinical determination.</p>
-        </div>
-      </div>
-    </div>
+      <!-- Connector lines A -->
+      <line x1="220" y1="173" x2="220" y2="208" stroke="#B8D4D1" stroke-width="1.5" stroke-dasharray="4,3"/>
+      <line x1="220" y1="276" x2="220" y2="311" stroke="#B8D4D1" stroke-width="1.5" stroke-dasharray="4,3"/>
+      <line x1="220" y1="379" x2="220" y2="400" stroke="#B8D4D1" stroke-width="1.5" stroke-dasharray="4,3"/>
+      <line x1="129" y1="400" x2="311" y2="400" stroke="#B8D4D1" stroke-width="1.5"/>
+      <line x1="129" y1="400" x2="129" y2="414" stroke="#B8D4D1" stroke-width="1.5" stroke-dasharray="4,3"/>
+      <line x1="311" y1="400" x2="311" y2="414" stroke="#B8D4D1" stroke-width="1.5" stroke-dasharray="4,3"/>
 
-    <!-- WOODY ALLEN -->
-    <div class="case-card reveal">
-      <div class="case-photo">
-        <div class="case-photo-placeholder">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
-          <span>Photo placeholder</span>
-          <span style="font-size:0.65rem; opacity:0.6;">Replace with image file</span>
-        </div>
-        <span class="case-classification classification-ambiguous">Clinically ambiguous / contested</span>
-      </div>
-      <div class="case-body">
-        <p class="case-name">Woody Allen</p>
-        <p class="case-descriptor">Film director and writer. Never charged criminally. Allegations subject to ongoing public dispute.</p>
-        <div class="case-section-block">
-          <p class="case-block-label">What Happened</p>
-          <p class="case-block-text">Allen has faced allegations from his adopted daughter Dylan Farrow, who has stated publicly that Allen sexually abused her when she was 7 years old during his contentious separation from Mia Farrow in 1992. Two investigations, one by the Connecticut State Police and one by Yale-New Haven Hospital, reached different conclusions. Allen was never charged or convicted. He has consistently denied the allegations.</p>
-        </div>
-        <div class="case-section-block">
-          <p class="case-block-label">Why the Clinical Picture Cannot Be Determined</p>
-          <p class="case-block-text">This case is included not to adjudicate guilt, but to demonstrate a critical point about the distinction this site addresses. Without a criminal conviction, a clinical evaluation, or established evidence beyond contested allegations, it is not possible to determine whether the alleged conduct reflects pedophilic disorder or any other clinical pattern. Public accusations, even serious and credible-sounding ones, do not constitute clinical evidence. This is precisely why clinical psychology insists on rigorous criteria and formal assessment rather than behavioral inference from public accounts alone.</p>
-        </div>
-        <div class="case-verdict verdict-ambiguous">
-          <p class="case-verdict-label">Clinical Assessment</p>
-          <p>No clinical determination is possible or appropriate based on contested, uninvestigated allegations alone. This case illustrates the limits of applying psychological frameworks to public cases without clinical evidence.</p>
-        </div>
-      </div>
-    </div>
+      <!-- Step nodes: Pathway B -->
+      <rect x="575" y="105" width="330" height="68" rx="10" fill="#fff" stroke="#F5D28A" stroke-width="1"/>
+      <text x="595" y="127" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#B07D18" letter-spacing="1">ORIGIN</text>
+      <text x="595" y="146" font-family="Inter, sans-serif" font-size="12.5" fill="#1B2A4A">Antisocial traits / situational factors</text>
+      <text x="595" y="163" font-family="Inter, sans-serif" font-size="11.5" fill="#4A5568">Impulse control deficits, substance use, access</text>
 
-        <!-- KEVIN SPACEY -->
-    <div class="case-card reveal">
-      <div class="case-photo">
-        <div class="case-photo-placeholder">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
-          <span>Photo placeholder</span>
-          <span style="font-size:0.65rem; opacity:0.6;">Replace with image file</span>
-        </div>
-        <span class="case-classification classification-opportunistic">Consistent with opportunistic offending</span>
-      </div>
-      <div class="case-body">
-        <p class="case-name">Kevin Spacey</p>
-        <p class="case-descriptor">Academy Award-winning actor. Faced multiple accusations beginning in 2017. Acquitted of criminal charges in the UK in 2023.</p>
-        <div class="case-section-block">
-          <p class="case-block-label">What Happened</p>
-          <p class="case-block-text">Beginning in October 2017, more than a dozen men came forward with accusations of sexual misconduct against Spacey spanning several decades. Accusers ranged in age from teenagers to adults in their thirties at the time of the alleged incidents. The accusations included unwanted groping, sexual coercion, and assault. Spacey was tried on criminal charges in the United Kingdom in 2023 and acquitted on all counts. Civil and criminal proceedings in the United States were also pursued. Throughout, Spacey denied the accusations of non-consensual conduct.</p>
-        </div>
-        <div class="case-section-block">
-          <p class="case-block-label">Why This Illustrates Opportunistic Offending Rather Than Pedophilic Disorder</p>
-          <p class="case-block-text">The most important clinical detail in the Spacey accusations is the wide age range of alleged victims, which spanned from teenagers to fully grown adults. Pedophilic disorder, as defined in the DSM-5, requires a specific and persistent sexual attraction to prepubescent children (generally age 13 or younger). When an individual's alleged victims span adolescence and adulthood, this is inconsistent with a child-specific sexual preference. The pattern described in the Spacey accusations more closely resembles predatory opportunism enabled by professional power and social status, directed at whomever was accessible and vulnerable, regardless of age. This is exactly the profile of the non-pedophilic offender described in the clinical literature (Murray, 2000; Tenbergen et al., 2015).</p>
-        </div>
-        <div class="case-verdict verdict-opportunistic">
-          <p class="case-verdict-label">Clinical Assessment</p>
-          <p>The wide age range of alleged victims, spanning teenagers through adults, is the key clinical indicator here. This pattern is inconsistent with pedophilic disorder and more consistent with power-based opportunistic sexual misconduct. Note that Spacey was acquitted of all criminal charges in the UK in 2023, which further complicates any behavioral analysis.</p>
-        </div>
-      </div>
-    </div>
+      <rect x="575" y="208" width="330" height="68" rx="10" fill="#fff" stroke="#F5D28A" stroke-width="1"/>
+      <text x="595" y="230" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#B07D18" letter-spacing="1">ATTRACTION</text>
+      <text x="595" y="249" font-family="Inter, sans-serif" font-size="12.5" fill="#1B2A4A">No primary attraction to children</text>
+      <text x="595" y="266" font-family="Inter, sans-serif" font-size="11.5" fill="#4A5568">May be attracted to adults; children are accessible</text>
 
+      <rect x="575" y="311" width="330" height="68" rx="10" fill="#fff" stroke="#F5D28A" stroke-width="1"/>
+      <text x="595" y="333" font-family="Inter, sans-serif" font-size="10" font-weight="600" fill="#B07D18" letter-spacing="1">BEHAVIOR FACTOR</text>
+      <text x="595" y="352" font-family="Inter, sans-serif" font-size="12.5" fill="#1B2A4A">Opportunity + disinhibition</text>
+      <text x="595" y="369" font-family="Inter, sans-serif" font-size="11.5" fill="#4A5568">Alcohol in ~50% of incidents (Murray, 2000)</text>
+
+      <!-- Connector lines B -->
+      <line x1="740" y1="173" x2="740" y2="208" stroke="#F5D28A" stroke-width="1.5" stroke-dasharray="4,3"/>
+      <line x1="740" y1="276" x2="740" y2="311" stroke="#F5D28A" stroke-width="1.5" stroke-dasharray="4,3"/>
+      <line x1="740" y1="379" x2="740" y2="414" stroke="#F5D28A" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+      <!-- Outcome B: offense occurs -->
+      <rect x="615" y="414" width="250" height="60" rx="10" fill="rgba(27,42,74,0.12)" stroke="#3D5A80" stroke-width="1.5"/>
+      <text x="740" y="439" text-anchor="middle" font-family="Inter, sans-serif" font-size="11.5" font-weight="600" fill="#1B2A4A">Offense occurs</text>
+      <text x="740" y="456" text-anchor="middle" font-family="Inter, sans-serif" font-size="10.5" fill="#4A5568">Situational, impulsive, often known victim</text>
+      <text x="740" y="471" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#718096">~50% of abusers (Murray, 2000)</text>
+
+      <!-- Center "VS" divider -->
+      <circle cx="480" cy="280" r="26" fill="var(--warm-white)" stroke="#DDD9D2" stroke-width="1.5"/>
+      <text x="480" y="286" text-anchor="middle" font-family="DM Serif Display, serif" font-size="15" fill="#1B2A4A">vs</text>
+    </svg>
+
+    <p style="text-align:center; font-size:0.8rem; color:var(--text-light); margin-top:1.5rem; font-style:italic;">Both pathways can result in child sexual abuse — but the psychological origins, risk factors, and appropriate interventions differ substantially. Source: Tenbergen et al. (2015); Murray (2000).</p>
   </div>
 </section>
 
+<!-- DECISION TREE -->
+<section class="decision-section" id="decision">
+  <div style="text-align:center; margin-bottom:3.5rem;">
+    <p class="section-label reveal">Interactive</p>
+    <h2 class="section-title centered reveal">Who actually offends — and why?</h2>
+    <p class="section-intro centered reveal">Walk through the factors that determine whether a person with or without pedophilic disorder commits a sexual offense against a child. Based on Tenbergen et al. (2015) and Murray (2000).</p>
+  </div>
+  <div class="decision-container reveal">
+    <div id="dt-step-0" class="decision-node">
+      <p class="decision-question">Does this person have a primary sexual attraction to prepubescent children (consistent with pedophilic disorder)?</p>
+      <div class="decision-buttons">
+        <button class="decision-btn yes" onclick="dtNext(0,'yes')">Yes — primary attraction to children</button>
+        <button class="decision-btn no" onclick="dtNext(0,'no')">No — attracted primarily to adults</button>
+      </div>
+    </div>
+
+    <!-- Branch: Yes (pedophilic) -->
+    <div id="dt-step-1a" style="display:none;">
+      <div class="decision-connector"></div>
+      <div class="decision-node">
+        <p class="decision-question">Does this person have strong impulse regulation and a stable support system?</p>
+        <div class="decision-buttons">
+          <button class="decision-btn yes" onclick="dtNext('1a','yes')">Yes — good self-regulation</button>
+          <button class="decision-btn no" onclick="dtNext('1a','no')">No — poor impulse control or isolated</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="dt-step-2a-yes" style="display:none;">
+      <div class="decision-connector"></div>
+      <div class="decision-outcome outcome-pedophilic">
+        <p class="outcome-label">Outcome</p>
+        <p class="outcome-title">Pedophilic disorder — no offense</p>
+        <p class="outcome-desc">Research shows many individuals with pedophilic attraction never offend. With strong impulse regulation, therapeutic support, and social accountability, non-offending is achievable and common. Prevention programs in Germany (e.g., Prevention Project Dunkelfeld) have successfully recruited self-identified pedophilic individuals seeking help to remain offense-free (Tenbergen et al., 2015).</p>
+      </div>
+    </div>
+
+    <div id="dt-step-2a-no" style="display:none;">
+      <div class="decision-connector"></div>
+      <div class="decision-node">
+        <p class="decision-question">Is there a history of antisocial personality traits, substance abuse, or comorbid disorders?</p>
+        <div class="decision-buttons">
+          <button class="decision-btn yes" onclick="dtNext('2a','yes')">Yes — multiple risk factors present</button>
+          <button class="decision-btn no" onclick="dtNext('2a','no')">No — isolated poor regulation only</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="dt-step-3a-yes" style="display:none;">
+      <div class="decision-connector"></div>
+      <div class="decision-outcome outcome-both">
+        <p class="outcome-label">Outcome</p>
+        <p class="outcome-title">Highest risk profile: pedophilic disorder + comorbid risk factors</p>
+        <p class="outcome-desc">Approximately 60% of pedophilic individuals in treatment have a personality disorder diagnosis, and 60% have a history of substance abuse (Tenbergen et al., 2015). When pedophilic attraction is combined with antisocial personality traits and substance disinhibition, the risk of contact offending rises substantially. Treatment approaches targeting both the paraphilic preference and the comorbid conditions are most effective.</p>
+      </div>
+    </div>
+
+    <div id="dt-step-3a-no" style="display:none;">
+      <div class="decision-connector"></div>
+      <div class="decision-outcome outcome-pedophilic">
+        <p class="outcome-label">Outcome</p>
+        <p class="outcome-title">Pedophilic disorder — elevated risk, manageable</p>
+        <p class="outcome-desc">Poor impulse regulation without additional comorbid risk factors represents a manageable risk profile. Cognitive-behavioral therapy targeting impulse control, alongside monitoring and support structures, significantly reduces offense risk. The attraction is unlikely to disappear, but the behavior can be effectively controlled (Tenbergen et al., 2015; Murray, 2000).</p>
+      </div>
+    </div>
+
+    <!-- Branch: No (no pedophilic attraction) -->
+    <div id="dt-step-1b" style="display:none;">
+      <div class="decision-connector"></div>
+      <div class="decision-node">
+        <p class="decision-question">Does this person have significant antisocial personality traits or a history of exploitative behavior toward others?</p>
+        <div class="decision-buttons">
+          <button class="decision-btn yes" onclick="dtNext('1b','yes')">Yes — antisocial pattern present</button>
+          <button class="decision-btn no" onclick="dtNext('1b','no')">No — no significant antisocial traits</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="dt-step-2b-yes" style="display:none;">
+      <div class="decision-connector"></div>
+      <div class="decision-node">
+        <p class="decision-question">Is there situational access to children combined with substance use or disinhibition?</p>
+        <div class="decision-buttons">
+          <button class="decision-btn yes" onclick="dtNext('2b','yes')">Yes — access + disinhibition present</button>
+          <button class="decision-btn no" onclick="dtNext('2b','no')">No — antisocial traits without situational opportunity</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="dt-step-3b-yes" style="display:none;">
+      <div class="decision-connector"></div>
+      <div class="decision-outcome outcome-opportunistic">
+        <p class="outcome-label">Outcome</p>
+        <p class="outcome-title">Opportunistic offending — highest risk non-pedophilic profile</p>
+        <p class="outcome-desc">Alcohol is associated with approximately 50% of child sexual abuse incidents. When antisocial personality traits combine with disinhibition and direct access, this represents the clearest non-pedophilic pathway to offending. The offense reflects exploitative opportunism rather than sexual preference. Prevention strategies should target access reduction and substance use, not attraction-focused treatment (Murray, 2000).</p>
+      </div>
+    </div>
+
+    <div id="dt-step-3b-no" style="display:none;">
+      <div class="decision-connector"></div>
+      <div class="decision-outcome outcome-opportunistic">
+        <p class="outcome-label">Outcome</p>
+        <p class="outcome-title">Antisocial pattern — risk is present but situational</p>
+        <p class="outcome-desc">Antisocial personality traits create a vulnerability for exploitative offending, but without situational access and disinhibition, the risk may not materialize. This group is less likely to offend against children specifically than against whoever is most accessible and vulnerable. Intervention targets generalized antisocial behavior rather than child-specific risk (Murray, 2000).</p>
+      </div>
+    </div>
+
+    <div id="dt-step-2b-noantisocial" style="display:none;">
+      <div class="decision-connector"></div>
+      <div class="decision-outcome outcome-opportunistic">
+        <p class="outcome-label">Outcome</p>
+        <p class="outcome-title">Low risk — no pedophilic disorder, no antisocial traits</p>
+        <p class="outcome-desc">Without a primary sexual attraction to children and without significant antisocial personality pathology, the risk of child sexual offending is substantially lower. This profile does not eliminate all risk (situational factors can still create vulnerability), but it represents the general population baseline rather than an elevated clinical risk group (Tenbergen et al., 2015; Murray, 2000).</p>
+      </div>
+    </div>
+
+    <div class="decision-reset">
+      <button id="dt-reset-btn" onclick="dtReset()">Start over</button>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section class="timeline-section" id="timeline">
+  <div style="text-align:center; margin-bottom:3.5rem;">
+    <p class="section-label reveal">Historical Context</p>
+    <h2 class="section-title centered reveal">How the clinical and legal understanding evolved</h2>
+    <p class="section-intro centered reveal">The distinction between pedophilia as a psychological condition and child sexual abuse as a crime took decades to formalize. Click any milestone to explore what changed and why it matters.</p>
+  </div>
+  <div class="timeline-track reveal">
+    <div class="timeline-line"><div class="timeline-progress" id="tl-progress"></div></div>
+    <div class="timeline-dots">
+      <div class="tl-dot-wrap active" onclick="tlGo(0)" id="tl-dot-0"><div class="tl-dot"></div><span class="tl-year">1886</span></div>
+      <div class="tl-dot-wrap" onclick="tlGo(1)" id="tl-dot-1"><div class="tl-dot"></div><span class="tl-year">1952</span></div>
+      <div class="tl-dot-wrap" onclick="tlGo(2)" id="tl-dot-2"><div class="tl-dot"></div><span class="tl-year">1968</span></div>
+      <div class="tl-dot-wrap" onclick="tlGo(3)" id="tl-dot-3"><div class="tl-dot"></div><span class="tl-year">1994</span></div>
+      <div class="tl-dot-wrap" onclick="tlGo(4)" id="tl-dot-4"><div class="tl-dot"></div><span class="tl-year">2000</span></div>
+      <div class="tl-dot-wrap" onclick="tlGo(5)" id="tl-dot-5"><div class="tl-dot"></div><span class="tl-year">2007</span></div>
+      <div class="tl-dot-wrap" onclick="tlGo(6)" id="tl-dot-6"><div class="tl-dot"></div><span class="tl-year">2013</span></div>
+      <div class="tl-dot-wrap" onclick="tlGo(7)" id="tl-dot-7"><div class="tl-dot"></div><span class="tl-year">2015+</span></div>
+    </div>
+    <div class="timeline-panel" id="tl-panel">
+      <div class="timeline-panel-year" id="tl-year">1886</div>
+      <div class="timeline-panel-title" id="tl-title">Krafft-Ebing coins the clinical terminology</div>
+      <div class="timeline-panel-body" id="tl-body">Richard von Krafft-Ebing's Psychopathia Sexualis introduced systematic clinical descriptions of sexual variations, including what he called "paedophilia erotica." This was one of the first attempts to describe sexual attraction to children as a psychological category rather than purely a moral or legal failure — an early step toward a clinical framework, however imperfect by modern standards.</div>
+      <div class="timeline-panel-cite" id="tl-cite">Historical context; see Tenbergen et al. (2015) for modern synthesis.</div>
+    </div>
+    <div class="timeline-nav">
+      <button class="tl-nav-btn" id="tl-prev" onclick="tlPrev()" disabled>&#8592; Previous</button>
+      <button class="tl-nav-btn" id="tl-next" onclick="tlNext()">Next &#8594;</button>
+    </div>
+  </div>
+</section>
+
+<!-- PLACEHOLDER end of removed cases section -->
+<div id="cases" style="display:none;"></div>
+
 <!-- PROFILES -->
 <section class="profiles-section" id="profiles">
+
   <div style="text-align:center; margin-bottom:3.5rem;">
     <p class="section-label reveal">Psychological Profiles</p>
     <h2 class="section-title centered reveal">What research tells us about each group</h2>
@@ -1516,6 +1478,7 @@
 </footer>
 
 <script>
+  // REVEAL ON SCROLL
   const reveals = document.querySelectorAll('.reveal');
   const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
@@ -1526,6 +1489,79 @@
     });
   }, { threshold: 0.06, rootMargin: '0px 0px -30px 0px' });
   reveals.forEach(el => observer.observe(el));
+
+  // DECISION TREE
+  function show(id) {
+    const el = document.getElementById(id);
+    if (el) { el.style.display = 'block'; el.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); }
+  }
+  function dtNext(step, choice) {
+    if (step === 0) {
+      document.getElementById('dt-step-0').querySelectorAll('.decision-btn').forEach(b => b.disabled = true);
+      if (choice === 'yes') show('dt-step-1a');
+      else show('dt-step-1b');
+    } else if (step === '1a') {
+      document.getElementById('dt-step-1a').querySelectorAll('.decision-btn').forEach(b => b.disabled = true);
+      if (choice === 'yes') show('dt-step-2a-yes');
+      else show('dt-step-2a-no');
+      document.getElementById('dt-reset-btn').style.display = 'inline-block';
+    } else if (step === '2a') {
+      document.getElementById('dt-step-2a-no').querySelectorAll('.decision-btn').forEach(b => b.disabled = true);
+      if (choice === 'yes') show('dt-step-3a-yes');
+      else show('dt-step-3a-no');
+    } else if (step === '1b') {
+      document.getElementById('dt-step-1b').querySelectorAll('.decision-btn').forEach(b => b.disabled = true);
+      if (choice === 'yes') show('dt-step-2b-yes');
+      else show('dt-step-2b-noantisocial');
+      document.getElementById('dt-reset-btn').style.display = 'inline-block';
+    } else if (step === '2b') {
+      document.getElementById('dt-step-2b-yes').querySelectorAll('.decision-btn').forEach(b => b.disabled = true);
+      if (choice === 'yes') show('dt-step-3b-yes');
+      else show('dt-step-3b-no');
+    }
+    if (['dt-step-2a-yes','dt-step-3a-yes','dt-step-3a-no','dt-step-2b-noantisocial','dt-step-3b-yes','dt-step-3b-no'].some(id => document.getElementById(id) && document.getElementById(id).style.display !== 'none')) {
+      document.getElementById('dt-reset-btn').style.display = 'inline-block';
+    }
+  }
+  function dtReset() {
+    ['dt-step-1a','dt-step-1b','dt-step-2a-yes','dt-step-2a-no','dt-step-3a-yes','dt-step-3a-no','dt-step-2b-yes','dt-step-2b-noantisocial','dt-step-3b-yes','dt-step-3b-no'].forEach(id => {
+      const el = document.getElementById(id);
+      if (el) el.style.display = 'none';
+    });
+    document.querySelectorAll('.decision-btn').forEach(b => b.disabled = false);
+    document.getElementById('dt-reset-btn').style.display = 'none';
+    document.getElementById('dt-step-0').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+
+  // TIMELINE
+  const tlData = [
+    { year: '1886', title: 'Krafft-Ebing coins the clinical terminology', body: 'Richard von Krafft-Ebing\'s Psychopathia Sexualis introduced systematic clinical descriptions of sexual variations, including what he termed "paedophilia erotica." This was one of the first attempts to describe sexual attraction to children as a psychological category rather than purely a moral or legal failure — an early step toward a clinical framework, however imperfect by modern standards.', cite: 'Historical context; see Tenbergen et al. (2015) for modern synthesis.' },
+    { year: '1952', title: 'DSM-I is published — no specific pedophilia category', body: 'The first edition of the Diagnostic and Statistical Manual of Mental Disorders (DSM-I) categorized sexual deviations broadly, with no specific or clearly delineated category for pedophilia. Child sexual abuse was understood primarily as a legal and moral matter rather than a psychiatric one. The clinical and legal frameworks were not yet distinct.', cite: 'American Psychiatric Association (1952); see Tenbergen et al. (2015).' },
+    { year: '1968', title: 'DSM-II and "sexual deviation" category', body: 'DSM-II grouped pedophilia under a general "sexual deviation" category alongside other paraphilias. The classification reflected a moral and social framework more than a clinical one, with little distinction between the presence of an attraction and the commission of a harmful act. No diagnostic criteria for distinguishing pedophilia from other sexual offending existed.', cite: 'American Psychiatric Association (1968); see Murray (2000).' },
+    { year: '1994', title: 'DSM-IV formalization: distress criterion introduced', body: 'DSM-IV introduced a crucial refinement: a paraphilia such as pedophilia only constituted a disorder if it caused "marked distress or interpersonal difficulty." This was the first formal acknowledgment in psychiatric classification that having a pedophilic attraction is distinct from having a pedophilic disorder. The shift opened the theoretical door to distinguishing non-offending pedophilic individuals from those who acted on or were distressed by the attraction.', cite: 'American Psychiatric Association (1994); see Tenbergen et al. (2015).' },
+    { year: '2000', title: 'Murray synthesizes offender research — two-category framework', body: 'Murray\'s (2000) landmark review in The Journal of Psychology synthesized decades of research to formally distinguish pedophilic child molesters from non-pedophilic (opportunistic or "surrogate") offenders. The review established that approximately 50% of child sexual abusers do not have pedophilic disorder, and that the two groups differ significantly in personality profile, offense pattern, victim selection, and therapeutic implications. This distinction became foundational to the clinical field.', cite: 'Murray (2000). The Journal of Psychology, 134(2), 211-224.' },
+    { year: '2007', title: 'Schiltz et al.: neuroimaging evidence of brain differences', body: 'A landmark neuroimaging study by Schiltz and colleagues (2007), published in the Archives of General Psychiatry, documented structural brain differences in pedophilic men, including significant volume reduction in the right amygdala and related diencephalic structures. This study was among the first to provide neurobiological evidence that pedophilic attraction is associated with measurable structural differences in the brain — supporting a neurodevelopmental rather than purely behavioral model.', cite: 'Schiltz et al. (2007). Archives of General Psychiatry, 64(6), 737-746.' },
+    { year: '2013', title: 'DSM-5: pedophilia vs. pedophilic disorder formally separated', body: 'DSM-5 drew the sharpest distinction yet between pedophilia and pedophilic disorder. DSM-5 explicitly states that a person can have pedophilic sexual interest without having a pedophilic disorder — the disorder diagnosis requires either marked distress or having acted on the attraction. This represented a formal psychiatric recognition of non-offending individuals with pedophilic attraction, with direct implications for prevention, treatment, and how the law should regard sexual attraction versus sexual behavior.', cite: 'American Psychiatric Association (2013); see Tenbergen et al. (2015).' },
+    { year: '2015+', title: 'Tenbergen et al. and growing neuroscience consensus', body: 'Tenbergen and colleagues (2015) published a comprehensive synthesis in Frontiers in Human Neuroscience integrating the neurobiological and psychological research literature on pedophilia. The review confirmed consistent structural and functional brain differences across multiple independent studies, documented the neurodevelopmental markers associated with pedophilic preference, and outlined how these findings should inform treatment and prevention. The growing consensus positions pedophilia as a neurodevelopmental condition rather than a choice, with major implications for both clinical treatment and public policy.', cite: 'Tenbergen et al. (2015). Frontiers in Human Neuroscience, 9, 344.' }
+  ];
+  let tlCurrent = 0;
+  function tlGo(i) {
+    tlCurrent = i;
+    document.getElementById('tl-year').textContent = tlData[i].year;
+    document.getElementById('tl-title').textContent = tlData[i].title;
+    document.getElementById('tl-body').textContent = tlData[i].body;
+    document.getElementById('tl-cite').textContent = tlData[i].cite;
+    document.getElementById('tl-prev').disabled = i === 0;
+    document.getElementById('tl-next').disabled = i === tlData.length - 1;
+    document.getElementById('tl-progress').style.width = (i / (tlData.length - 1) * 100) + '%';
+    for (let j = 0; j < tlData.length; j++) {
+      const dot = document.getElementById('tl-dot-' + j);
+      dot.className = 'tl-dot-wrap' + (j === i ? ' active' : j < i ? ' passed' : '');
+    }
+  }
+  function tlNext() { if (tlCurrent < tlData.length - 1) tlGo(tlCurrent + 1); }
+  function tlPrev() { if (tlCurrent > 0) tlGo(tlCurrent - 1); }
+  tlGo(0);
 </script>
 
 </body>
