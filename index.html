@@ -1,0 +1,1532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Preference vs. Behavior | Understanding Pedophilia and Child Sexual Abuse</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy: #1B2A4A;
+    --slate: #3D5A80;
+    --warm-white: #F8F6F2;
+    --amber: #E8A838;
+    --sage: #7BA7A0;
+    --sage-light: #B8D4D1;
+    --amber-light: #F5D28A;
+    --text-dark: #1B2A4A;
+    --text-mid: #4A5568;
+    --text-light: #718096;
+    --border: #DDD9D2;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: var(--warm-white);
+    color: var(--text-dark);
+    line-height: 1.7;
+    overflow-x: hidden;
+  }
+
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    background: rgba(248,246,242,0.94);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--border);
+    padding: 0 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 62px;
+  }
+
+  .nav-brand {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1rem;
+    color: var(--navy);
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    font-size: 0.72rem;
+    font-weight: 500;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    color: var(--text-mid);
+    transition: color 0.2s;
+  }
+
+  .nav-links a:hover { color: var(--navy); }
+
+  /* HERO */
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 2rem 5rem;
+    text-align: center;
+    position: relative;
+    background: var(--navy);
+    overflow: hidden;
+  }
+
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 70% 55% at 50% 65%, rgba(61,90,128,0.55) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .hero-eyebrow {
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--amber);
+    margin-bottom: 1.75rem;
+    opacity: 0;
+    animation: fadeUp 0.8s 0.2s forwards;
+  }
+
+  .hero h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(2.4rem, 6.5vw, 5.2rem);
+    line-height: 1.06;
+    letter-spacing: -0.025em;
+    color: #fff;
+    max-width: 820px;
+    margin-bottom: 1.75rem;
+    opacity: 0;
+    animation: fadeUp 0.8s 0.4s forwards;
+  }
+
+  .hero-sub {
+    font-size: 1.05rem;
+    color: rgba(255,255,255,0.6);
+    max-width: 560px;
+    font-weight: 300;
+    line-height: 1.75;
+    opacity: 0;
+    animation: fadeUp 0.8s 0.6s forwards;
+  }
+
+  .scroll-hint {
+    position: absolute;
+    bottom: 2.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.6rem;
+    color: rgba(255,255,255,0.35);
+    font-size: 0.65rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    opacity: 0;
+    animation: fadeUp 0.8s 1.3s forwards;
+  }
+
+  .scroll-arrow {
+    width: 1px;
+    height: 44px;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.35), transparent);
+    animation: scrollPulse 2.2s ease-in-out infinite;
+  }
+
+  /* SECTION UTILITIES */
+  .section-label {
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--sage);
+    margin-bottom: 0.8rem;
+  }
+
+  .section-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    line-height: 1.12;
+    letter-spacing: -0.02em;
+    color: var(--navy);
+    margin-bottom: 1rem;
+    max-width: 640px;
+  }
+
+  .section-intro {
+    color: var(--text-mid);
+    max-width: 600px;
+    font-size: 1rem;
+    line-height: 1.75;
+    margin-bottom: 3.5rem;
+  }
+
+  .centered { text-align: center; margin-left: auto; margin-right: auto; }
+
+  /* WHY THIS MATTERS TO PSYCHOLOGY */
+  .why-section {
+    padding: 7rem 2rem;
+    background: var(--slate);
+    color: #fff;
+  }
+
+  .why-section .section-label { color: var(--sage-light); }
+  .why-section .section-title { color: #fff; max-width: 700px; }
+  .why-section .section-intro { color: rgba(255,255,255,0.65); max-width: 680px; }
+
+  .why-grid {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .why-card {
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 14px;
+    padding: 2rem;
+  }
+
+  .why-card-num {
+    font-family: 'DM Serif Display', serif;
+    font-size: 2.2rem;
+    color: var(--amber);
+    line-height: 1;
+    margin-bottom: 0.75rem;
+  }
+
+  .why-card h4 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.15rem;
+    color: #fff;
+    margin-bottom: 0.65rem;
+    line-height: 1.25;
+  }
+
+  .why-card p {
+    font-size: 0.88rem;
+    color: rgba(255,255,255,0.7);
+    line-height: 1.65;
+  }
+
+  .dsm-box {
+    max-width: 1000px;
+    margin: 2.5rem auto 0;
+    background: rgba(232,168,56,0.12);
+    border: 1px solid rgba(232,168,56,0.3);
+    border-radius: 14px;
+    padding: 2.25rem;
+  }
+
+  .dsm-box-label {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--amber);
+    margin-bottom: 0.75rem;
+  }
+
+  .dsm-box h4 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+
+  .dsm-criteria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.25rem;
+    margin-top: 1.25rem;
+  }
+
+  .dsm-criterion {
+    background: rgba(255,255,255,0.06);
+    border-radius: 10px;
+    padding: 1.25rem;
+  }
+
+  .dsm-criterion-label {
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--amber);
+    margin-bottom: 0.5rem;
+  }
+
+  .dsm-criterion p {
+    font-size: 0.84rem;
+    color: rgba(255,255,255,0.72);
+    line-height: 1.6;
+  }
+
+  /* VENN SECTION */
+  .venn-section {
+    padding: 7rem 2rem;
+    background: var(--warm-white);
+  }
+
+  .venn-container { max-width: 960px; margin: 0 auto; }
+
+  .venn-svg-wrap {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .venn-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+
+  .venn-card {
+    border-radius: 14px;
+    padding: 2rem;
+    transition: transform 0.25s, box-shadow 0.25s;
+  }
+
+  .venn-card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(0,0,0,0.08); }
+
+  .venn-card.left { background: rgba(123,167,160,0.13); border: 1px solid rgba(123,167,160,0.35); }
+  .venn-card.center { background: rgba(232,168,56,0.1); border: 1px solid rgba(232,168,56,0.3); }
+  .venn-card.right { background: rgba(61,90,128,0.08); border: 1px solid rgba(61,90,128,0.2); }
+
+  .venn-card-label {
+    font-size: 0.63rem;
+    font-weight: 700;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    margin-bottom: 0.8rem;
+  }
+
+  .venn-card.left .venn-card-label { color: var(--sage); }
+  .venn-card.center .venn-card-label { color: #B07D18; }
+  .venn-card.right .venn-card-label { color: var(--slate); }
+
+  .venn-card h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.15rem;
+    margin-bottom: 0.75rem;
+    color: var(--navy);
+    line-height: 1.25;
+  }
+
+  .venn-card p { font-size: 0.87rem; color: var(--text-mid); line-height: 1.65; }
+
+  /* COMPARISON */
+  .comparison-section {
+    padding: 7rem 2rem;
+    background: var(--navy);
+    color: #fff;
+  }
+
+  .comparison-section .section-label { color: var(--sage); }
+  .comparison-section .section-title { color: #fff; }
+  .comparison-section .section-intro { color: rgba(255,255,255,0.6); }
+
+  .comparison-grid {
+    max-width: 1040px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 48px 1fr;
+  }
+
+  .comp-col { padding: 0 1.5rem; }
+
+  .comp-col-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.85rem;
+    margin-bottom: 2.25rem;
+    padding-bottom: 1.25rem;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+
+  .comp-dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; margin-top: 0.45rem; }
+  .comp-dot.sage { background: var(--sage); }
+  .comp-dot.amber { background: var(--amber); }
+
+  .comp-col-header h3 { font-family: 'DM Serif Display', serif; font-size: 1.35rem; line-height: 1.2; }
+  .comp-col-header .col-sub { font-family: 'Inter', sans-serif; font-size: 0.8rem; font-weight: 300; color: rgba(255,255,255,0.42); display: block; margin-top: 0.2rem; }
+
+  .comp-divider { display: flex; align-items: stretch; justify-content: center; padding-top: 5rem; }
+  .comp-divider-line { width: 1px; background: rgba(255,255,255,0.1); }
+
+  .comp-item { margin-bottom: 1.75rem; padding-bottom: 1.75rem; border-bottom: 1px solid rgba(255,255,255,0.06); }
+  .comp-item:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+  .comp-item-tag { font-size: 0.63rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.3); margin-bottom: 0.4rem; }
+  .comp-item p { font-size: 0.9rem; color: rgba(255,255,255,0.78); line-height: 1.65; }
+
+  /* STATISTICS */
+  .stats-section { padding: 6rem 2rem; background: #EEF2F7; }
+
+  .stats-grid { max-width: 940px; margin: 0 auto; display: grid; grid-template-columns: repeat(3,1fr); gap: 1.75rem; }
+
+  .stat-card {
+    text-align: center;
+    padding: 2.75rem 1.75rem;
+    background: var(--warm-white);
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    box-shadow: 0 2px 20px rgba(0,0,0,0.04);
+  }
+
+  .stat-number { font-family: 'DM Serif Display', serif; font-size: 3.4rem; line-height: 1; color: var(--amber); margin-bottom: 0.6rem; }
+  .stat-label { font-size: 0.87rem; color: var(--text-mid); line-height: 1.6; }
+  .stat-source { font-size: 0.68rem; color: var(--text-light); margin-top: 1rem; font-style: italic; }
+
+  /* NEUROSCIENCE */
+  .brain-section { padding: 7rem 2rem; background: var(--warm-white); }
+
+  .brain-layout {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 380px 1fr;
+    gap: 5rem;
+    align-items: start;
+  }
+
+  .brain-visual {
+    position: relative;
+    width: 380px;
+    height: 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .brain-ring { position: absolute; border-radius: 50%; border: 1px solid; animation: pulse 3.2s ease-in-out infinite; }
+  .brain-ring:nth-child(1) { width: 150px; height: 150px; border-color: rgba(27,42,74,0.5); animation-delay: 0s; }
+  .brain-ring:nth-child(2) { width: 240px; height: 240px; border-color: rgba(27,42,74,0.25); animation-delay: 0.6s; }
+  .brain-ring:nth-child(3) { width: 330px; height: 330px; border-color: rgba(27,42,74,0.1); animation-delay: 1.2s; }
+
+  .brain-center {
+    width: 110px; height: 110px;
+    background: var(--navy);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    flex-direction: column; text-align: center;
+    padding: 1rem; z-index: 1; position: relative;
+  }
+
+  .brain-icon { font-size: 1.8rem; margin-bottom: 0.2rem; }
+  .brain-center-label { font-size: 0.56rem; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: var(--sage-light); line-height: 1.4; }
+
+  .brain-text h2 { font-family: 'DM Serif Display', serif; font-size: 2.4rem; line-height: 1.12; letter-spacing: -0.02em; color: var(--navy); margin-bottom: 1rem; }
+  .brain-text .intro-p { color: var(--text-mid); font-size: 0.95rem; margin-bottom: 1.5rem; line-height: 1.75; }
+
+  .brain-finding {
+    display: flex; gap: 1rem; align-items: flex-start;
+    margin-bottom: 1.25rem; padding: 1.25rem;
+    background: #EEF2F7; border-radius: 10px;
+    border-left: 3px solid var(--sage);
+  }
+
+  .finding-num { font-family: 'DM Serif Display', serif; font-size: 1.5rem; color: var(--sage); line-height: 1; flex-shrink: 0; margin-top: 0.1rem; }
+  .finding-content h5 { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.07em; text-transform: uppercase; color: var(--navy); margin-bottom: 0.35rem; }
+  .finding-content p { font-size: 0.86rem; color: var(--text-mid); line-height: 1.6; }
+
+  .acquired-box {
+    max-width: 1000px; margin: 3rem auto 0;
+    background: var(--navy); color: #fff;
+    border-radius: 16px; padding: 2.5rem;
+    display: grid; grid-template-columns: auto 1fr; gap: 2rem; align-items: start;
+  }
+
+  .acquired-icon {
+    width: 56px; height: 56px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.6rem; flex-shrink: 0;
+  }
+
+  .acquired-text h4 { font-family: 'DM Serif Display', serif; font-size: 1.3rem; margin-bottom: 0.75rem; color: #fff; }
+  .acquired-text p { font-size: 0.9rem; color: rgba(255,255,255,0.72); line-height: 1.7; margin-bottom: 0.75rem; }
+  .acquired-text p:last-child { margin-bottom: 0; }
+
+  /* REAL CASES */
+  .cases-section { padding: 7rem 2rem; background: #EEF2F7; }
+
+  .cases-grid {
+    max-width: 1040px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .case-card {
+    background: var(--warm-white);
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    overflow: hidden;
+    transition: transform 0.25s, box-shadow 0.25s;
+  }
+
+  .case-card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(0,0,0,0.09); }
+
+  .case-photo {
+    width: 100%;
+    height: 220px;
+    background: #D6D2C8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .case-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center top;
+    display: block;
+  }
+
+  .case-photo-placeholder {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: var(--text-light);
+    font-size: 0.78rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  .case-photo-placeholder svg { opacity: 0.35; }
+
+  .case-classification {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 0.3rem 0.7rem;
+    border-radius: 20px;
+  }
+
+  .classification-pedophilic { background: rgba(123,167,160,0.92); color: #fff; }
+  .classification-opportunistic { background: rgba(232,168,56,0.92); color: var(--navy); }
+  .classification-ambiguous { background: rgba(27,42,74,0.85); color: #fff; }
+
+  .case-body { padding: 1.75rem; }
+
+  .case-name {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.3rem;
+    color: var(--navy);
+    margin-bottom: 0.2rem;
+    line-height: 1.2;
+  }
+
+  .case-descriptor {
+    font-size: 0.75rem;
+    color: var(--text-light);
+    font-weight: 500;
+    margin-bottom: 1.25rem;
+    letter-spacing: 0.03em;
+  }
+
+  .case-section-block { margin-bottom: 1rem; }
+  .case-section-block:last-child { margin-bottom: 0; }
+
+  .case-block-label {
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-light);
+    margin-bottom: 0.35rem;
+  }
+
+  .case-block-text {
+    font-size: 0.86rem;
+    color: var(--text-mid);
+    line-height: 1.65;
+  }
+
+  .case-verdict {
+    margin-top: 1.25rem;
+    padding: 1rem 1.25rem;
+    border-radius: 8px;
+    border-left: 3px solid;
+  }
+
+  .verdict-pedophilic { background: rgba(123,167,160,0.12); border-color: var(--sage); }
+  .verdict-opportunistic { background: rgba(232,168,56,0.1); border-color: var(--amber); }
+  .verdict-ambiguous { background: rgba(27,42,74,0.06); border-color: var(--slate); }
+
+  .case-verdict-label {
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 0.35rem;
+  }
+
+  .verdict-pedophilic .case-verdict-label { color: var(--sage); }
+  .verdict-opportunistic .case-verdict-label { color: #9A6B10; }
+  .verdict-ambiguous .case-verdict-label { color: var(--slate); }
+
+  .case-verdict p { font-size: 0.84rem; color: var(--text-mid); line-height: 1.6; }
+
+  /* LEGEND */
+  .cases-legend {
+    max-width: 1040px;
+    margin: 0 auto 2.5rem;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 0.78rem;
+    color: var(--text-mid);
+    font-weight: 500;
+  }
+
+  .legend-dot {
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  /* PROFILES */
+  .profiles-section { padding: 7rem 2rem; background: #EEF2F7; }
+
+  .profiles-grid { max-width: 1000px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; }
+
+  .profile-card { background: var(--warm-white); border-radius: 14px; padding: 2.25rem; border: 1px solid var(--border); }
+
+  .profile-card-header { display: flex; align-items: center; gap: 0.85rem; margin-bottom: 1.5rem; padding-bottom: 1.25rem; border-bottom: 1px solid var(--border); }
+
+  .profile-color-bar { width: 4px; height: 40px; border-radius: 2px; flex-shrink: 0; }
+  .bar-sage { background: var(--sage); }
+  .bar-amber { background: var(--amber); }
+
+  .profile-card-header h3 { font-family: 'DM Serif Display', serif; font-size: 1.2rem; color: var(--navy); line-height: 1.2; }
+  .profile-card-header .sub { font-size: 0.78rem; color: var(--text-light); margin-top: 0.15rem; }
+
+  .profile-trait { display: flex; gap: 0.75rem; align-items: flex-start; margin-bottom: 1rem; padding-bottom: 1rem; border-bottom: 1px solid var(--border); }
+  .profile-trait:last-child { border-bottom: none; margin-bottom: 0; padding-bottom: 0; }
+
+  .trait-tag { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-light); flex-shrink: 0; width: 82px; margin-top: 0.15rem; line-height: 1.4; }
+  .trait-value { font-size: 0.87rem; color: var(--text-mid); line-height: 1.6; }
+
+  /* GLOSSARY */
+  .glossary-section { padding: 7rem 2rem; background: var(--navy); color: #fff; }
+  .glossary-section .section-label { color: var(--sage); }
+  .glossary-section .section-title { color: #fff; }
+  .glossary-section .section-intro { color: rgba(255,255,255,0.6); }
+
+  .glossary-grid {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  .glossary-term {
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: background 0.2s;
+  }
+
+  .glossary-term:hover { background: rgba(255,255,255,0.1); }
+
+  .glossary-term dt {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.1rem;
+    color: var(--amber);
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+  }
+
+  .glossary-term dd { font-size: 0.87rem; color: rgba(255,255,255,0.72); line-height: 1.65; }
+
+  /* MISCONCEPTIONS */
+  .misconceptions-section { padding: 7rem 2rem; background: var(--warm-white); }
+
+  .misconceptions-grid { max-width: 960px; margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+
+  .myth-card { background: #EEF2F7; border-radius: 12px; padding: 1.85rem; border: 1px solid var(--border); transition: box-shadow 0.2s; }
+  .myth-card:hover { box-shadow: 0 8px 28px rgba(0,0,0,0.07); }
+
+  .myth-label { font-size: 0.62rem; font-weight: 700; letter-spacing: 0.13em; text-transform: uppercase; padding: 0.25rem 0.65rem; border-radius: 4px; display: inline-block; margin-bottom: 0.8rem; }
+  .myth-label.myth { background: #FDE8E8; color: #9B2C2C; }
+  .myth-label.fact { background: #E6F4EE; color: #276749; }
+
+  .myth-card h4 { font-family: 'DM Serif Display', serif; font-size: 1.05rem; color: var(--navy); margin-bottom: 0.6rem; line-height: 1.3; }
+  .myth-card p { font-size: 0.86rem; color: var(--text-mid); line-height: 1.65; }
+
+  /* IMPLICATIONS */
+  .implications-section { padding: 7rem 2rem; background: var(--slate); color: #fff; }
+  .implications-section .section-label { color: var(--sage-light); }
+  .implications-section .section-title { color: #fff; }
+  .implications-section .section-intro { color: rgba(255,255,255,0.62); }
+
+  .implications-cards { max-width: 960px; margin: 0 auto; display: grid; grid-template-columns: repeat(3,1fr); gap: 1.5rem; }
+
+  .impl-card { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.12); border-radius: 14px; padding: 2rem; transition: background 0.2s; }
+  .impl-card:hover { background: rgba(255,255,255,0.12); }
+
+  .impl-icon { font-size: 1.85rem; margin-bottom: 1.1rem; }
+  .impl-card h4 { font-family: 'DM Serif Display', serif; font-size: 1.15rem; margin-bottom: 0.8rem; color: #fff; line-height: 1.2; }
+  .impl-card p { font-size: 0.87rem; color: rgba(255,255,255,0.7); line-height: 1.65; }
+
+  /* REFERENCES */
+  .references-section { padding: 7rem 2rem; background: var(--navy); border-top: 1px solid rgba(255,255,255,0.08); }
+  .references-section .section-label { color: var(--sage); }
+
+  .references-inner { max-width: 820px; margin: 0 auto; }
+
+  .ref-intro { font-size: 0.9rem; color: rgba(255,255,255,0.55); margin-top: 0.75rem; margin-bottom: 2.5rem; line-height: 1.7; }
+
+  .ref-list { list-style: none; }
+  .ref-list li { font-size: 0.88rem; color: rgba(255,255,255,0.72); line-height: 1.8; padding: 1.25rem 0; border-bottom: 1px solid rgba(255,255,255,0.1); padding-left: 2.25rem; text-indent: -2.25rem; }
+  .ref-list li:last-child { border-bottom: none; }
+
+  footer { background: #111D30; color: rgba(255,255,255,0.35); padding: 2.25rem 2rem; text-align: center; font-size: 0.78rem; line-height: 1.7; }
+
+  /* REVEAL */
+  .reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.75s ease, transform 0.75s ease; }
+  .reveal.visible { opacity: 1; transform: none; }
+
+  @keyframes fadeUp { from { opacity:0; transform:translateY(18px); } to { opacity:1; transform:translateY(0); } }
+  @keyframes pulse { 0%,100% { opacity:0.5; transform:scale(1); } 50% { opacity:1; transform:scale(1.04); } }
+  @keyframes scrollPulse { 0%,100% { opacity:0.35; } 50% { opacity:0.75; } }
+
+  @media (max-width: 900px) {
+    .brain-layout { grid-template-columns: 1fr; }
+    .brain-visual { display: none; }
+    .comparison-grid { grid-template-columns: 1fr; }
+    .comp-divider { display: none; }
+    .acquired-box { grid-template-columns: 1fr; }
+    .profiles-grid { grid-template-columns: 1fr; }
+    .why-grid { grid-template-columns: 1fr; }
+    .dsm-criteria { grid-template-columns: 1fr; }
+    .glossary-grid { grid-template-columns: 1fr; }
+  }
+
+  @media (max-width: 700px) {
+    .nav-links { display: none; }
+    .venn-cards { grid-template-columns: 1fr; }
+    .stats-grid { grid-template-columns: 1fr; }
+    .misconceptions-grid { grid-template-columns: 1fr; }
+    .implications-cards { grid-template-columns: 1fr; }
+    .cases-grid { grid-template-columns: 1fr; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <span class="nav-brand">Preference vs. Behavior</span>
+  <ul class="nav-links">
+    <li><a href="#why">Why It Matters</a></li>
+    <li><a href="#distinction">The Distinction</a></li>
+    <li><a href="#neuroscience">Neuroscience</a></li>
+    <li><a href="#cases">Real Cases</a></li>
+    <li><a href="#glossary">Glossary</a></li>
+    <li><a href="#references">References</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <p class="hero-eyebrow">A Psychology Education Project</p>
+  <h1>Not all pedophiles are child abusers. Not all child abusers are pedophiles.</h1>
+  <p class="hero-sub">These two things are routinely conflated in public conversation. Psychology and neuroscience draw a careful, consequential line between a sexual preference pattern and a criminal behavior. Understanding that line matters for science, for treatment, and for protecting children.</p>
+  <div class="scroll-hint">
+    <span>Scroll to explore</span>
+    <div class="scroll-arrow"></div>
+  </div>
+</section>
+
+<!-- WHY THIS MATTERS TO PSYCHOLOGY -->
+<section class="why-section" id="why">
+  <div style="text-align:center; margin-bottom:3.5rem;">
+    <p class="section-label reveal">Why Psychology Cares</p>
+    <h2 class="section-title centered reveal">Why this distinction matters to the field</h2>
+    <p class="section-intro centered reveal">In clinical psychology and psychiatry, words carry precise meanings with real consequences. Conflating pedophilia with child sexual abuse does not just produce inaccurate headlines. It leads to misdiagnosis, ineffective treatment, and prevention strategies that miss most of the people who actually commit abuse.</p>
+  </div>
+
+  <div class="why-grid reveal">
+    <div class="why-card">
+      <div class="why-card-num">01</div>
+      <h4>The DSM-5 draws the line deliberately</h4>
+      <p>The Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition (DSM-5) classifies pedophilia as a paraphilia, meaning an atypical pattern of sexual arousal. It becomes a diagnosable pedophilic disorder only when it causes clinically significant distress to the individual or when the person has acted on sexual urges toward a child. This means a person can have pedophilic sexual attraction without having a disorder, and without having committed any crime (Tenbergen et al., 2015).</p>
+    </div>
+    <div class="why-card">
+      <div class="why-card-num">02</div>
+      <h4>Half of abusers have no pedophilic disorder</h4>
+      <p>Research consistently shows that approximately 50% of individuals who sexually abuse children do not have pedophilic disorder at all. They are classified as opportunistic or surrogate offenders whose abuse is driven by impulse control problems, antisocial personality traits, situational access, or substance disinhibition rather than a persistent sexual attraction to children (Tenbergen et al., 2015; Blanchard et al., 2001).</p>
+    </div>
+    <div class="why-card">
+      <div class="why-card-num">03</div>
+      <h4>Accurate diagnosis changes treatment</h4>
+      <p>A clinician who cannot distinguish pedophilic disorder from opportunistic offending cannot select the right intervention. Pedophilic disorder may respond to pharmacological approaches that reduce sexual drive or cognitive-behavioral therapies that address attraction management. Non-pedophilic offenders require entirely different treatment targets, including impulse control and antisocial behavior (Murray, 2000; Tenbergen et al., 2015).</p>
+    </div>
+    <div class="why-card">
+      <div class="why-card-num">04</div>
+      <h4>Prevention depends on understanding the difference</h4>
+      <p>If public health campaigns and law enforcement assume that all child sexual abuse stems from pedophilic disorder, they design interventions around the wrong population. The majority of abuse is committed by people known to the child, often family members, who show no clinical evidence of pedophilic preference. Prevention requires addressing access, opportunity, family dynamics, and substance use alongside any clinical factors (Murray, 2000).</p>
+    </div>
+  </div>
+
+  <div class="dsm-box reveal">
+    <p class="dsm-box-label">DSM-5 Diagnostic Criteria</p>
+    <h4>What the DSM-5 actually requires for a diagnosis of Pedophilic Disorder</h4>
+    <div class="dsm-criteria">
+      <div class="dsm-criterion">
+        <p class="dsm-criterion-label">Criterion A</p>
+        <p>Over a period of at least 6 months, recurrent, intense sexually arousing fantasies, sexual urges, or behaviors involving sexual activity with a prepubescent child or children (generally age 13 years or younger).</p>
+      </div>
+      <div class="dsm-criterion">
+        <p class="dsm-criterion-label">Criterion B</p>
+        <p>The person has acted on these sexual urges, or the sexual urges or fantasies cause marked distress or interpersonal difficulty. Without this criterion being met, the attraction alone does not constitute a disorder.</p>
+      </div>
+      <div class="dsm-criterion">
+        <p class="dsm-criterion-label">Criterion C</p>
+        <p>The person is at least 16 years old and at least 5 years older than the child or children in Criterion A. Note: this does not include an individual in late adolescence involved in an ongoing sexual relationship with a 12- or 13-year-old.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VENN SECTION -->
+<section class="venn-section" id="distinction">
+  <div style="text-align:center; margin-bottom:3.5rem;">
+    <p class="section-label reveal">The Core Distinction</p>
+    <h2 class="section-title centered reveal">One is a preference. One is an act.</h2>
+    <p class="section-intro centered reveal">Pedophilia and child sexual abuse are frequently used as synonyms in public discourse. Psychologists and researchers distinguish them carefully, and that distinction carries real consequences for prevention, diagnosis, and treatment.</p>
+  </div>
+
+  <div class="venn-container">
+    <svg class="venn-svg-wrap reveal" viewBox="0 0 720 320" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="268" cy="145" r="135" fill="rgba(123,167,160,0.18)" stroke="#7BA7A0" stroke-width="1.8"/>
+      <circle cx="452" cy="145" r="135" fill="rgba(61,90,128,0.12)" stroke="#3D5A80" stroke-width="1.8"/>
+      <text x="360" y="128" text-anchor="middle" font-family="DM Serif Display, serif" font-size="13" fill="#9A6B10">Overlap</text>
+      <text x="360" y="146" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#9A6B10" font-weight="500">~50% of</text>
+      <text x="360" y="162" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="#9A6B10" font-weight="500">abusers</text>
+      <text x="192" y="118" text-anchor="middle" font-family="DM Serif Display, serif" font-size="16" fill="#1B2A4A">Pedophilia</text>
+      <text x="192" y="138" text-anchor="middle" font-family="Inter, sans-serif" font-size="10.5" fill="#4A5568">Sexual preference</text>
+      <text x="192" y="155" text-anchor="middle" font-family="Inter, sans-serif" font-size="10.5" fill="#4A5568">for prepubescent</text>
+      <text x="192" y="172" text-anchor="middle" font-family="Inter, sans-serif" font-size="10.5" fill="#4A5568">children</text>
+      <text x="192" y="196" text-anchor="middle" font-family="Inter, sans-serif" font-size="9.5" fill="#718096">1 to 5% of men</text>
+      <text x="192" y="212" text-anchor="middle" font-family="Inter, sans-serif" font-size="9.5" fill="#718096">Many never offend</text>
+      <text x="528" y="118" text-anchor="middle" font-family="DM Serif Display, serif" font-size="16" fill="#1B2A4A">Child</text>
+      <text x="528" y="138" text-anchor="middle" font-family="DM Serif Display, serif" font-size="16" fill="#1B2A4A">Sexual Abuse</text>
+      <text x="528" y="160" text-anchor="middle" font-family="Inter, sans-serif" font-size="10.5" fill="#4A5568">A criminal act,</text>
+      <text x="528" y="177" text-anchor="middle" font-family="Inter, sans-serif" font-size="10.5" fill="#4A5568">regardless of the</text>
+      <text x="528" y="194" text-anchor="middle" font-family="Inter, sans-serif" font-size="10.5" fill="#4A5568">offender's sexual</text>
+      <text x="528" y="211" text-anchor="middle" font-family="Inter, sans-serif" font-size="10.5" fill="#4A5568">preference</text>
+      <text x="360" y="300" text-anchor="middle" font-family="Inter, sans-serif" font-size="9.5" fill="#718096">Tenbergen et al. (2015); Blanchard et al. (2001)</text>
+    </svg>
+
+    <div class="venn-cards">
+      <div class="venn-card left reveal">
+        <p class="venn-card-label">Pedophilia Only</p>
+        <h3>A Persistent Sexual Preference</h3>
+        <p>Pedophilia is defined in the DSM-5 as recurrent, intense sexual attraction toward prepubescent children (generally age 13 or younger) persisting for at least 6 months in a person who is 16 or older. It is a pattern of attraction, not automatically a crime. Many individuals with this preference never offend (Tenbergen et al., 2015).</p>
+      </div>
+      <div class="venn-card center reveal">
+        <p class="venn-card-label">Overlap Zone</p>
+        <h3>Where Both Occur Together</h3>
+        <p>Only about 50% of individuals who sexually abuse children meet clinical criteria for pedophilic disorder. The remaining half abuse children for other reasons, including poor impulse control, antisocial personality, substance use, or opportunistic access (Tenbergen et al., 2015; Blanchard et al., 2001).</p>
+      </div>
+      <div class="venn-card right reveal">
+        <p class="venn-card-label">Child Sexual Abuse Only</p>
+        <h3>A Behavior, Not a Preference</h3>
+        <p>Many child molesters have no pedophilic disorder whatsoever. Researchers identify surrogate or opportunistic offenders who abuse children due to impulse control disorders, antisocial personality traits, situational factors, or general sexual deviancy rather than a specific attraction to children (Murray, 2000; Tenbergen et al., 2015).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPARISON -->
+<section class="comparison-section">
+  <div style="text-align:center; margin-bottom:3.5rem;">
+    <p class="section-label reveal">Side by Side</p>
+    <h2 class="section-title centered reveal" style="color:#fff;">A careful side-by-side shows that pedophilia and child molestation differ in their nature, cause, classification, and what treatment even means.</h2>
+    <p class="section-intro centered reveal">The comparison below draws from peer-reviewed psychological research and DSM-5 diagnostic criteria.</p>
+  </div>
+
+  <div class="comparison-grid reveal">
+    <div class="comp-col">
+      <div class="comp-col-header">
+        <div class="comp-dot sage"></div>
+        <h3>Pedophilia<span class="col-sub">A sexual preference pattern or disorder</span></h3>
+      </div>
+      <div class="comp-item">
+        <p class="comp-item-tag">Classification</p>
+        <p>Classified in the DSM-5 as a paraphilic disorder, but only when it causes marked distress to the individual or is acted upon with a non-consenting person. The preference alone is distinct from the disorder (Tenbergen et al., 2015).</p>
+      </div>
+      <div class="comp-item">
+        <p class="comp-item-tag">Origin</p>
+        <p>Research points to neurobiological roots, including altered brain structure in frontal and temporal regions, reduced amygdala volume, and disrupted white matter connectivity. It is likely a neurodevelopmental condition present from early life (Tenbergen et al., 2015; Lopes et al., 2020).</p>
+      </div>
+      <div class="comp-item">
+        <p class="comp-item-tag">Age of Recognition</p>
+        <p>Typically recognized in adolescence or early adulthood, appearing around the same developmental window as other sexual preferences. The attraction is reported as stable over time (Tenbergen et al., 2015).</p>
+      </div>
+      <div class="comp-item">
+        <p class="comp-item-tag">Prevalence</p>
+        <p>Estimated at 1 to 5% of men in the general population. The true pedophilic preference is likely rarer than the prevalence of sexual fantasies involving minors, which some studies estimate higher (Tenbergen et al., 2015).</p>
+      </div>
+      <div class="comp-item">
+        <p class="comp-item-tag">Treatment Goal</p>
+        <p>Therapeutic goals center on reducing distress, building impulse management skills, and preventing offending behavior. The attraction itself cannot currently be eliminated, but offending behavior can be effectively managed (Tenbergen et al., 2015; Murray, 2000).</p>
+      </div>
+      <div class="comp-item">
+        <p class="comp-item-tag">Subtypes</p>
+        <p>The DSM-5 distinguishes between the exclusive type (attracted only to children) and the non-exclusive type (attracted to both children and adults). Over 90% of diagnosed pedophilic individuals also experience adult sexual attraction (Lopes et al., 2020).</p>
+      </div>
+    </div>
+    <div class="comp-divider"><div class="comp-divider-line"></div></div>
+    <div class="comp-col">
+      <div class="comp-col-header">
+        <div class="comp-dot amber"></div>
+        <h3>Child Sexual Abuse<span class="col-sub">A behavior and a crime</span></h3>
+      </div>
+      <div class="comp-item">
+        <p class="comp-item-tag">Classification</p>
+        <p>Defined legally, not psychiatrically. The American Medical Association defines it as exploitation of a child for the sexual gratification or profit of an adult. It requires no specific psychiatric diagnosis (Murray, 2000).</p>
+      </div>
+      <div class="comp-item">
+        <p class="comp-item-tag">Origin</p>
+        <p>Highly varied across offenders. Contributing factors include antisocial personality disorder, impulse control deficits, alcohol and substance use (associated with approximately 50% of cases), opportunity, and general sexual deviancy unrelated to pedophilic preference (Murray, 2000).</p>
+      </div>
+      <div class="comp-item">
+        <p class="comp-item-tag">Who Commits It</p>
+        <p>Perpetrators range in age from adolescence to middle age and are predominantly but not exclusively male. In the majority of reported cases, the perpetrator is a family member, friend, or trusted adult known to the child, not a stranger (Murray, 2000).</p>
+      </div>
+      <div class="comp-item">
+        <p class="comp-item-tag">Pattern</p>
+        <p>Many incidents are one-time or opportunistic occurrences that would not meet DSM-5 criteria for pedophilic disorder, which requires a recurrent pattern over 6 months. However, offenders with pedophilic disorder tend toward more chronic, repeated offending (Murray, 2000).</p>
+      </div>
+      <div class="comp-item">
+        <p class="comp-item-tag">Legal Consequence</p>
+        <p>A prosecutable criminal offense regardless of the offender's internal mental state or clinical diagnosis. Having pedophilic disorder does not mitigate legal responsibility for abuse (Lopes et al., 2020).</p>
+      </div>
+      <div class="comp-item">
+        <p class="comp-item-tag">Self-Justification</p>
+        <p>In clinical interviews, the most common justification (29% of a sample) was that the victim had consented. Others cited deprivation of conventional sex, intoxication, or claimed the child initiated contact (Murray, 2000).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATISTICS -->
+<section class="stats-section">
+  <div style="text-align:center; margin-bottom:3rem;">
+    <p class="section-label reveal">By the Numbers</p>
+    <h2 class="section-title centered reveal">What peer-reviewed research tells us</h2>
+  </div>
+  <div class="stats-grid reveal">
+    <div class="stat-card">
+      <div class="stat-number">~50%</div>
+      <p class="stat-label">of child sexual abusers are estimated to be pedophilic. The other half commit abuse without a primary sexual attraction to children.</p>
+      <p class="stat-source">Tenbergen et al. (2015); Blanchard et al. (2001); Schaefer et al. (2010)</p>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">1 to 5%</div>
+      <p class="stat-label">estimated prevalence of true pedophilic sexual preference among men in the general population, the majority of whom never commit an offense.</p>
+      <p class="stat-source">Tenbergen et al. (2015)</p>
+    </div>
+    <div class="stat-card">
+      <div class="stat-number">~50%</div>
+      <p class="stat-label">of child molestation cases involve alcohol consumption by the perpetrator, highlighting situational and disinhibitory factors in a large share of offenses.</p>
+      <p class="stat-source">Murray (2000); Rada (1976), as cited in Murray (2000)</p>
+    </div>
+  </div>
+</section>
+
+<!-- NEUROSCIENCE -->
+<section class="brain-section" id="neuroscience">
+  <div class="brain-layout">
+    <div>
+      <div class="brain-visual reveal">
+        <div class="brain-ring"></div>
+        <div class="brain-ring"></div>
+        <div class="brain-ring"></div>
+        <div class="brain-center">
+          <div class="brain-icon">🧠</div>
+          <p class="brain-center-label">Neural<br>Architecture</p>
+        </div>
+      </div>
+    </div>
+    <div class="brain-text">
+      <p class="section-label reveal">Neuroscience</p>
+      <h2 class="reveal">Pedophilia has biological roots</h2>
+      <p class="intro-p reveal">Neuroimaging research over the past two decades has identified consistent structural and functional differences in the brains of pedophilic individuals. This body of evidence suggests pedophilic preference functions more like a neurodevelopmental condition than a moral failure or a conscious choice. The research also reveals an important distinction: the brain regions associated with the preference itself differ from those linked to the commission of offenses (Tenbergen et al., 2015).</p>
+
+      <div class="brain-finding reveal">
+        <div class="finding-num">01</div>
+        <div class="finding-content">
+          <h5>Amygdala Volume Reduction</h5>
+          <p>One of the most replicated findings in pedophilia neuroimaging research is reduced gray matter volume in the right amygdala. The amygdala plays a central role in emotional processing and the regulation of sexual behavior. This finding has been confirmed across multiple independent studies (Schiltz et al., 2007, as cited in Tenbergen et al., 2015).</p>
+        </div>
+      </div>
+
+      <div class="brain-finding reveal">
+        <div class="finding-num">02</div>
+        <div class="finding-content">
+          <h5>Disrupted White Matter Connectivity</h5>
+          <p>Studies found reduced white matter volume in pedophilic men in key fiber tracts that connect brain regions involved in impulse control, attention, and the processing of sexual stimuli. Researchers interpret this as reflecting insufficient neural connectivity rather than simple regional damage (Cantor et al., 2008, as cited in Tenbergen et al., 2015).</p>
+        </div>
+      </div>
+
+      <div class="brain-finding reveal">
+        <div class="finding-num">03</div>
+        <div class="finding-content">
+          <h5>Frontal Lobe and Behavioral Disinhibition</h5>
+          <p>The orbitofrontal cortex, which governs behavioral control and the suppression of socially inappropriate impulses, shows structural and functional differences in pedophilic men who have committed contact offenses. Researchers distinguish this from the preference itself: the frontal lobe appears more closely related to whether someone acts on the preference than to its existence (Tenbergen et al., 2015).</p>
+        </div>
+      </div>
+
+      <div class="brain-finding reveal">
+        <div class="finding-num">04</div>
+        <div class="finding-content">
+          <h5>Temporal Lobe and Sexual Preoccupation</h5>
+          <p>Research suggests the temporal lobe, including the hippocampus and surrounding structures, is associated with the sexual preoccupation with children that characterizes pedophilic preference. Disturbances in temporal lobe function have been linked to increases in pedophilic ideation and behavior across both imaging studies and clinical case reports (Tenbergen et al., 2015).</p>
+        </div>
+      </div>
+
+      <div class="brain-finding reveal">
+        <div class="finding-num">05</div>
+        <div class="finding-content">
+          <h5>Pattern Classification via fMRI</h5>
+          <p>A landmark study used functional MRI pattern classification to distinguish pedophilic from non-pedophilic men based on brain activation patterns in response to preferred sexual stimuli. The method achieved a mean accuracy of 95%, with 100% specificity and 88% sensitivity, suggesting brain-level signatures of pedophilic preference may be detectable as an objective biomarker (Ponseti et al., 2012, as cited in Tenbergen et al., 2015).</p>
+        </div>
+      </div>
+
+      <div class="brain-finding reveal">
+        <div class="finding-num">06</div>
+        <div class="finding-content">
+          <h5>Neurodevelopmental Markers</h5>
+          <p>Pedophilic men show elevated rates of non-right-handedness, shorter stature, and a higher incidence of head injuries before age 13 compared to non-pedophilic men. These physical markers suggest that neurodevelopmental perturbations occurring during prenatal development or early childhood may contribute to the emergence of pedophilic preference (Tenbergen et al., 2015).</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="acquired-box reveal">
+    <div class="acquired-icon">⚡</div>
+    <div class="acquired-text">
+      <h4>A Window into Causality: Acquired Pedophilia</h4>
+      <p>Among the most compelling evidence for a neurobiological basis of pedophilia are cases of acquired pedophilia, in which previously non-pedophilic adults developed pedophilic behavior following brain injury or disease. A 2020 review identified 22 such cases in the medical literature up to 2019. All but one occurred in men, and in nearly every case the damage was located in the right frontotemporoinsular cortex or related subcortical structures (Lopes et al., 2020).</p>
+      <p>A widely cited case from Burns and Swerdlow (2003), as reviewed in Lopes et al. (2020), involved a 40-year-old schoolteacher who developed increasingly intrusive interest in child pornography and made sexual advances toward his stepdaughter. Neuroimaging revealed a growing right orbitofrontal tumor. Following surgical removal of the tumor, the pedophilic behavior resolved entirely. When the tumor regrew, the behaviors returned. A second resection produced a second remission, establishing a direct causal link between brain function and the behavioral presentation.</p>
+      <p>These cases do not suggest that all pedophilia results from detectable brain lesions. Rather, they illuminate the neural circuits whose disruption can produce pedophilic behavior, providing a cleaner window into causality than observational neuroimaging studies alone can offer (Lopes et al., 2020).</p>
+    </div>
+  </div>
+</section>
+
+<!-- REAL CASES -->
+<section class="cases-section" id="cases">
+  <div style="text-align:center; margin-bottom:2rem;">
+    <p class="section-label reveal">Real Cases</p>
+    <h2 class="section-title centered reveal">Applying the distinction to documented cases</h2>
+    <p class="section-intro centered reveal">Public cases of child sexual abuse are often reported without any clinical framing. Using the psychological distinction between pedophilic disorder and opportunistic offending, we can examine what the evidence actually suggests about each case. These analyses are based on documented court records, clinical evaluations where public, and peer-reviewed forensic literature, not media speculation.</p>
+  </div>
+
+  <div class="cases-legend reveal">
+    <div class="legend-item">
+      <div class="legend-dot" style="background: var(--sage);"></div>
+      Evidence consistent with pedophilic disorder
+    </div>
+    <div class="legend-item">
+      <div class="legend-dot" style="background: var(--amber);"></div>
+      Evidence consistent with opportunistic offending
+    </div>
+    <div class="legend-item">
+      <div class="legend-dot" style="background: var(--slate);"></div>
+      Clinically ambiguous or unresolved
+    </div>
+  </div>
+
+  <div class="cases-grid">
+
+    <!-- SANDUSKY -->
+    <div class="case-card reveal">
+      <div class="case-photo">
+        <img src="jerry_sandusky.jpg" alt="Jerry Sandusky">
+        <span class="case-classification classification-pedophilic">Consistent with pedophilic disorder</span>
+      </div>
+      <div class="case-body">
+        <p class="case-name">Jerry Sandusky</p>
+        <p class="case-descriptor">Former Penn State defensive football coordinator. Convicted 2012.</p>
+        <div class="case-section-block">
+          <p class="case-block-label">What Happened</p>
+          <p class="case-block-text">Sandusky was convicted on 45 counts of child sexual abuse spanning more than a decade. He used his nonprofit organization, The Second Mile, to identify and groom vulnerable boys, building emotional dependency before escalating to sexual contact. Victims ranged from 8 to 13 years old.</p>
+        </div>
+        <div class="case-section-block">
+          <p class="case-block-label">Why This Is Not Simply Child Molestation</p>
+          <p class="case-block-text">The sustained, deliberate grooming of prepubescent boys over more than a decade, the specific age range of victims, the construction of an institutional pipeline to access children, and the consistency of the pattern across multiple unrelated victims all point toward a persistent, child-specific sexual preference rather than opportunistic or situational offending. This is precisely the kind of chronic, organized pattern that the DSM-5 duration criterion is designed to capture.</p>
+        </div>
+        <div class="case-verdict verdict-pedophilic">
+          <p class="case-verdict-label">Clinical Assessment</p>
+          <p>The behavioral evidence is most consistent with pedophilic disorder of the exclusive or near-exclusive type, with a specific attraction to prepubescent boys and sustained offense behavior spanning years.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- NASSAR -->
+    <div class="case-card reveal">
+      <div class="case-photo">
+        <div class="case-photo-placeholder">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+          <span>Photo placeholder</span>
+          <span style="font-size:0.65rem; opacity:0.6;">Replace with image file</span>
+        </div>
+        <span class="case-classification classification-pedophilic">Consistent with pedophilic disorder</span>
+      </div>
+      <div class="case-body">
+        <p class="case-name">Larry Nassar</p>
+        <p class="case-descriptor">Former USA Gymnastics national team doctor. Sentenced 2018.</p>
+        <div class="case-section-block">
+          <p class="case-block-label">What Happened</p>
+          <p class="case-block-text">Nassar was sentenced to up to 175 years in prison after more than 150 women and girls provided victim impact statements. He used his position as a sports medicine physician to abuse patients during medical appointments, falsely framing abuse as legitimate medical procedures over nearly three decades.</p>
+        </div>
+        <div class="case-section-block">
+          <p class="case-block-label">Why This Is Not Simply Child Molestation</p>
+          <p class="case-block-text">The scope, duration, and consistency of Nassar's offending across hundreds of victims and nearly 30 years far exceeds what is typically seen in opportunistic offending. He constructed an elaborate professional identity specifically structured to provide access to young female athletes and gymnasts. The deliberate, premeditated nature of the abuse and the specific victim profile suggest a persistent sexual preference, not situational access to children.</p>
+        </div>
+        <div class="case-verdict verdict-pedophilic">
+          <p class="case-verdict-label">Clinical Assessment</p>
+          <p>The behavioral pattern across decades and hundreds of victims is most consistent with pedophilic or hebephilic disorder, with a specific and sustained sexual attraction to young female athletes.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- R. KELLY -->
+    <div class="case-card reveal">
+      <div class="case-photo">
+        <img src="kelly.jpeg" alt="R. Kelly">
+        <span class="case-classification classification-opportunistic">Consistent with opportunistic offending</span>
+      </div>
+      <div class="case-body">
+        <p class="case-name">R. Kelly</p>
+        <p class="case-descriptor">R&amp;B musician. Convicted 2021 on federal racketeering and sex trafficking charges.</p>
+        <div class="case-section-block">
+          <p class="case-block-label">What Happened</p>
+          <p class="case-block-text">Kelly was convicted of sex trafficking, racketeering, and sexual abuse spanning decades. Victims included minors and adults. He used his celebrity status, financial resources, and a network of associates to recruit, control, and abuse victims of varying ages, some as young as 14.</p>
+        </div>
+        <div class="case-section-block">
+          <p class="case-block-label">Why This Is Not Pedophilic Disorder</p>
+          <p class="case-block-text">A critical distinction: Kelly's documented victims included adult women as well as minors. The pattern of behavior reflects coercive control, power exploitation, and a predatory use of fame rather than a specific sexual attraction to prepubescent children. When adult victims are present alongside minor victims, the clinical picture is more consistent with exploitative opportunism and antisocial personality traits than with a child-specific sexual preference as defined by the DSM-5.</p>
+        </div>
+        <div class="case-verdict verdict-opportunistic">
+          <p class="case-verdict-label">Clinical Assessment</p>
+          <p>The evidence is more consistent with predatory opportunistic offending enabled by power and control, with victims across a wide age range, than with pedophilic disorder defined by a persistent attraction to prepubescent children specifically.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- EPSTEIN -->
+    <div class="case-card reveal">
+      <div class="case-photo">
+        <img src="epstein.jpeg" alt="Jeffrey Epstein">
+        <span class="case-classification classification-opportunistic">Consistent with opportunistic offending</span>
+      </div>
+      <div class="case-body">
+        <p class="case-name">Jeffrey Epstein</p>
+        <p class="case-descriptor">Financier. Arrested 2019 on federal sex trafficking charges. Died in custody 2019.</p>
+        <div class="case-section-block">
+          <p class="case-block-label">What Happened</p>
+          <p class="case-block-text">Epstein was charged with sex trafficking of minors in Florida and New York. He was accused of recruiting and abusing hundreds of underage girls through a network of associates. He had previously received a controversial plea deal in 2008 that allowed him to avoid federal prosecution.</p>
+        </div>
+        <div class="case-section-block">
+          <p class="case-block-label">Why This Is Not Pedophilic Disorder</p>
+          <p class="case-block-text">Epstein's documented victims were predominantly adolescent girls, not prepubescent children. Pedophilic disorder as defined in the DSM-5 specifically involves attraction to prepubescent children (generally age 13 and under, Tanner stage 1 or 2). Epstein's pattern is better described as hebephilic exploitation enabled by extreme wealth, social access, and coercive power structures, rather than a clinical pedophilic preference. The systematic nature of his network reflects sophisticated predatory organization, not impulsive opportunism.</p>
+        </div>
+        <div class="case-verdict verdict-opportunistic">
+          <p class="case-verdict-label">Clinical Assessment</p>
+          <p>Based on available public evidence, Epstein's offense pattern is more consistent with exploitative hebephilia and predatory use of power than with DSM-5 pedophilic disorder, which requires a specific attraction to prepubescent children.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- GARY GLITTER -->
+    <div class="case-card reveal">
+      <div class="case-photo">
+        <img src="glitter.jpg" alt="Gary Glitter">
+        <span class="case-classification classification-pedophilic">Consistent with pedophilic disorder</span>
+      </div>
+      <div class="case-body">
+        <p class="case-name">Gary Glitter</p>
+        <p class="case-descriptor">British rock musician. Convicted of child sexual offenses in 1999, 2006, and 2015.</p>
+        <div class="case-section-block">
+          <p class="case-block-label">What Happened</p>
+          <p class="case-block-text">Gary Glitter (born Paul Gadd) has been convicted of child sexual offenses in three countries over nearly two decades. His 1999 conviction in the United Kingdom stemmed from child pornography found on his laptop. His 2006 conviction in Vietnam involved the abuse of two girls aged 10 and 11. His 2015 United Kingdom conviction involved historic offenses against girls as young as 8 years old.</p>
+        </div>
+        <div class="case-section-block">
+          <p class="case-block-label">Why This Is Not Simply Opportunistic Offending</p>
+          <p class="case-block-text">The cross-national, multi-decade pattern of offenses consistently targeting prepubescent girls, combined with possession of child sexual abuse material, fits the clinical profile of pedophilic disorder far more closely than situational or opportunistic offending. The possession of child sexual abuse material is itself considered a reliable indicator of pedophilic sexual interest in the clinical literature (Seto et al., 2006, as cited in Tenbergen et al., 2015).</p>
+        </div>
+        <div class="case-verdict verdict-pedophilic">
+          <p class="case-verdict-label">Clinical Assessment</p>
+          <p>The consistent victim profile, the cross-national offending pattern spanning decades, and the documented possession of child sexual abuse material are collectively most consistent with pedophilic disorder.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ROMAN POLANSKI -->
+    <div class="case-card reveal">
+      <div class="case-photo">
+        <div class="case-photo-placeholder">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+          <span>Photo placeholder</span>
+          <span style="font-size:0.65rem; opacity:0.6;">Replace with image file</span>
+        </div>
+        <span class="case-classification classification-ambiguous">Clinically ambiguous</span>
+      </div>
+      <div class="case-body">
+        <p class="case-name">Roman Polanski</p>
+        <p class="case-descriptor">Film director. Pled guilty 1977 to unlawful sexual intercourse with a minor. Fled the US before sentencing.</p>
+        <div class="case-section-block">
+          <p class="case-block-label">What Happened</p>
+          <p class="case-block-text">In 1977, Polanski pled guilty to unlawful sexual intercourse with a 13-year-old girl after being charged with rape, sodomy, and administering a controlled substance. He fled the United States before sentencing and has lived outside US jurisdiction since. Additional accusers have come forward in subsequent decades alleging abuse that occurred during the same era.</p>
+        </div>
+        <div class="case-section-block">
+          <p class="case-block-label">Why the Clinical Picture Is Ambiguous</p>
+          <p class="case-block-text">This case illustrates the difficulty of applying clinical distinctions without a formal evaluation. Polanski's documented victim was 13, placing the offense at the boundary between pedophilia (attraction to prepubescent children) and hebephilia (attraction to pubescent adolescents). A single documented offense, while serious, does not by itself meet the DSM-5 duration criterion for pedophilic disorder. Whether additional accusers represent a consistent pattern or isolated incidents is not established with sufficient clinical evidence to draw conclusions about sexual preference.</p>
+        </div>
+        <div class="case-verdict verdict-ambiguous">
+          <p class="case-verdict-label">Clinical Assessment</p>
+          <p>The available public record is insufficient to distinguish pedophilic or hebephilic disorder from opportunistic offending. This case is a useful illustration of why public information alone rarely permits a clinical determination.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- WOODY ALLEN -->
+    <div class="case-card reveal">
+      <div class="case-photo">
+        <div class="case-photo-placeholder">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+          <span>Photo placeholder</span>
+          <span style="font-size:0.65rem; opacity:0.6;">Replace with image file</span>
+        </div>
+        <span class="case-classification classification-ambiguous">Clinically ambiguous / contested</span>
+      </div>
+      <div class="case-body">
+        <p class="case-name">Woody Allen</p>
+        <p class="case-descriptor">Film director and writer. Never charged criminally. Allegations subject to ongoing public dispute.</p>
+        <div class="case-section-block">
+          <p class="case-block-label">What Happened</p>
+          <p class="case-block-text">Allen has faced allegations from his adopted daughter Dylan Farrow, who has stated publicly that Allen sexually abused her when she was 7 years old during his contentious separation from Mia Farrow in 1992. Two investigations, one by the Connecticut State Police and one by Yale-New Haven Hospital, reached different conclusions. Allen was never charged or convicted. He has consistently denied the allegations.</p>
+        </div>
+        <div class="case-section-block">
+          <p class="case-block-label">Why the Clinical Picture Cannot Be Determined</p>
+          <p class="case-block-text">This case is included not to adjudicate guilt, but to demonstrate a critical point about the distinction this site addresses. Without a criminal conviction, a clinical evaluation, or established evidence beyond contested allegations, it is not possible to determine whether the alleged conduct reflects pedophilic disorder or any other clinical pattern. Public accusations, even serious and credible-sounding ones, do not constitute clinical evidence. This is precisely why clinical psychology insists on rigorous criteria and formal assessment rather than behavioral inference from public accounts alone.</p>
+        </div>
+        <div class="case-verdict verdict-ambiguous">
+          <p class="case-verdict-label">Clinical Assessment</p>
+          <p>No clinical determination is possible or appropriate based on contested, uninvestigated allegations alone. This case illustrates the limits of applying psychological frameworks to public cases without clinical evidence.</p>
+        </div>
+      </div>
+    </div>
+
+        <!-- KEVIN SPACEY -->
+    <div class="case-card reveal">
+      <div class="case-photo">
+        <div class="case-photo-placeholder">
+          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+          <span>Photo placeholder</span>
+          <span style="font-size:0.65rem; opacity:0.6;">Replace with image file</span>
+        </div>
+        <span class="case-classification classification-opportunistic">Consistent with opportunistic offending</span>
+      </div>
+      <div class="case-body">
+        <p class="case-name">Kevin Spacey</p>
+        <p class="case-descriptor">Academy Award-winning actor. Faced multiple accusations beginning in 2017. Acquitted of criminal charges in the UK in 2023.</p>
+        <div class="case-section-block">
+          <p class="case-block-label">What Happened</p>
+          <p class="case-block-text">Beginning in October 2017, more than a dozen men came forward with accusations of sexual misconduct against Spacey spanning several decades. Accusers ranged in age from teenagers to adults in their thirties at the time of the alleged incidents. The accusations included unwanted groping, sexual coercion, and assault. Spacey was tried on criminal charges in the United Kingdom in 2023 and acquitted on all counts. Civil and criminal proceedings in the United States were also pursued. Throughout, Spacey denied the accusations of non-consensual conduct.</p>
+        </div>
+        <div class="case-section-block">
+          <p class="case-block-label">Why This Illustrates Opportunistic Offending Rather Than Pedophilic Disorder</p>
+          <p class="case-block-text">The most important clinical detail in the Spacey accusations is the wide age range of alleged victims, which spanned from teenagers to fully grown adults. Pedophilic disorder, as defined in the DSM-5, requires a specific and persistent sexual attraction to prepubescent children (generally age 13 or younger). When an individual's alleged victims span adolescence and adulthood, this is inconsistent with a child-specific sexual preference. The pattern described in the Spacey accusations more closely resembles predatory opportunism enabled by professional power and social status, directed at whomever was accessible and vulnerable, regardless of age. This is exactly the profile of the non-pedophilic offender described in the clinical literature (Murray, 2000; Tenbergen et al., 2015).</p>
+        </div>
+        <div class="case-verdict verdict-opportunistic">
+          <p class="case-verdict-label">Clinical Assessment</p>
+          <p>The wide age range of alleged victims, spanning teenagers through adults, is the key clinical indicator here. This pattern is inconsistent with pedophilic disorder and more consistent with power-based opportunistic sexual misconduct. Note that Spacey was acquitted of all criminal charges in the UK in 2023, which further complicates any behavioral analysis.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROFILES -->
+<section class="profiles-section" id="profiles">
+  <div style="text-align:center; margin-bottom:3.5rem;">
+    <p class="section-label reveal">Psychological Profiles</p>
+    <h2 class="section-title centered reveal">What research tells us about each group</h2>
+    <p class="section-intro centered reveal">Psychological research has identified recurring personality traits, behavioral patterns, and self-perceptions associated with each group. These profiles are generalizations drawn from research samples, which are often limited to incarcerated individuals and should be interpreted cautiously (Murray, 2000).</p>
+  </div>
+
+  <div class="profiles-grid">
+    <div class="profile-card reveal">
+      <div class="profile-card-header">
+        <div class="profile-color-bar bar-sage"></div>
+        <div>
+          <h3>Pedophilic Individuals</h3>
+          <p class="sub">Drawn from clinical and self-referred samples</p>
+        </div>
+      </div>
+      <div class="profile-trait">
+        <span class="trait-tag">Personality</span>
+        <p class="trait-value">Studies using the Eysenck Personality Questionnaire found pedophilic individuals to present as introverted, shy, sensitive, and often depressed. Additional findings include emotional immaturity and social introversion (Levin and Stava, 1987, as cited in Murray, 2000).</p>
+      </div>
+      <div class="profile-trait">
+        <span class="trait-tag">Social Skills</span>
+        <p class="trait-value">Research suggests many pedophilic individuals experience difficulty forming and maintaining adult sexual relationships. Children are perceived as less socially demanding and more available, which some theorists propose contributes to the behavioral expression of pedophilic preference (Murray, 2000).</p>
+      </div>
+      <div class="profile-trait">
+        <span class="trait-tag">Comorbidities</span>
+        <p class="trait-value">Among pedophilic individuals in treatment, approximately two-thirds have a lifetime history of mood or anxiety disorders, 60% have a history of substance abuse, and 60% meet criteria for a personality disorder diagnosis (Tenbergen et al., 2015).</p>
+      </div>
+      <div class="profile-trait">
+        <span class="trait-tag">Cognitive IQ</span>
+        <p class="trait-value">A meta-analysis found that IQ scores between 90 and 95 are associated with sexual offending against children and pedophilia specifically, with lower IQ correlating with younger victim age (Cantor et al., 2005, as cited in Tenbergen et al., 2015).</p>
+      </div>
+      <div class="profile-trait">
+        <span class="trait-tag">Aggression</span>
+        <p class="trait-value">Pedophilic individuals are generally less physically aggressive than rapists. Most rely on persuasion, grooming, deceit, and the development of emotional closeness with victims rather than physical force (Murray, 2000).</p>
+      </div>
+    </div>
+
+    <div class="profile-card reveal">
+      <div class="profile-card-header">
+        <div class="profile-color-bar bar-amber"></div>
+        <div>
+          <h3>Non-Pedophilic Child Molesters</h3>
+          <p class="sub">Opportunistic or surrogate offenders</p>
+        </div>
+      </div>
+      <div class="profile-trait">
+        <span class="trait-tag">Motivation</span>
+        <p class="trait-value">Rather than primary sexual attraction, the key motivating factor for this group is often the availability and vulnerability of children, combined with poor impulse control and compromised social functioning (Murray, 2000; Tenbergen et al., 2015).</p>
+      </div>
+      <div class="profile-trait">
+        <span class="trait-tag">Social Skills</span>
+        <p class="trait-value">Compared to rapists and control groups, child molesters showed greater fear of negative evaluation, unassertiveness, and social ineptitude in behavioral assessments. Deficits in adult heterosexual skills have been proposed as contributing to the choice of children as targets (Oberholser and Beck, 1986, as cited in Murray, 2000).</p>
+      </div>
+      <div class="profile-trait">
+        <span class="trait-tag">Substance Use</span>
+        <p class="trait-value">Alcohol is associated with approximately 50% of child molestation incidents. In a study of 203 incarcerated child molesters, nearly 30% had been drinking heavily at the time of the offense, implicating disinhibition as a significant pathway to offending (Rada, 1976, as cited in Murray, 2000).</p>
+      </div>
+      <div class="profile-trait">
+        <span class="trait-tag">Offense Pattern</span>
+        <p class="trait-value">Many incidents are single occurrences that do not meet the duration criterion for pedophilic disorder. Non-pedophilic offenders appear more impulsive and opportunistic rather than premeditated and grooming-oriented (Murray, 2000).</p>
+      </div>
+      <div class="profile-trait">
+        <span class="trait-tag">Self-Perception</span>
+        <p class="trait-value">In clinical interviews, child molesters frequently rationalized their behavior through cognitive distortions, including claims that the victim consented (29%), that they had been deprived of conventional sex (24%), or that the child had initiated the contact (22%) (Pollock and Hashmall, 1991, as cited in Murray, 2000).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GLOSSARY -->
+<section class="glossary-section" id="glossary">
+  <div style="text-align:center; margin-bottom:3.5rem;">
+    <p class="section-label reveal">Key Terms</p>
+    <h2 class="section-title centered reveal" style="color:#fff;">Glossary</h2>
+    <p class="section-intro centered reveal">This site uses clinical and neuroscientific terminology that may be unfamiliar to readers outside the field. The definitions below reflect current usage in psychology and psychiatry.</p>
+  </div>
+
+  <dl class="glossary-grid reveal">
+    <div class="glossary-term">
+      <dt>DSM-5</dt>
+      <dd>The Diagnostic and Statistical Manual of Mental Disorders, Fifth Edition, published by the American Psychiatric Association. The DSM-5 is the standard classification system used by mental health professionals in the United States to diagnose psychiatric conditions. It defines the specific criteria a person must meet to receive a given diagnosis, including pedophilic disorder.</dd>
+    </div>
+    <div class="glossary-term">
+      <dt>Paraphilia</dt>
+      <dd>An intense and persistent pattern of sexual arousal to atypical objects, situations, or individuals. Paraphilias are not disorders in themselves. According to the DSM-5, a paraphilia becomes a paraphilic disorder only when it causes significant distress to the individual or involves harm to others. Pedophilia is classified as a paraphilia; pedophilic disorder is the diagnosable condition.</dd>
+    </div>
+    <div class="glossary-term">
+      <dt>Pedophilic Disorder</dt>
+      <dd>A DSM-5 diagnosis requiring recurrent, intense sexual attraction to prepubescent children (generally age 13 or younger) over at least 6 months, in a person 16 or older, that causes significant distress or has been acted upon. The attraction alone, without distress or action, does not meet the full diagnostic threshold for a disorder.</dd>
+    </div>
+    <div class="glossary-term">
+      <dt>Hebephilia</dt>
+      <dd>Sexual attraction primarily to pubescent children, typically those in early adolescence (roughly ages 11 to 14). Hebephilia is distinct from pedophilia, which involves attraction to prepubescent children. The distinction matters clinically because the DSM-5 criteria for pedophilic disorder specifically reference prepubescent children. Several of the public cases discussed on this site involve hebephilic rather than pedophilic patterns.</dd>
+    </div>
+    <div class="glossary-term">
+      <dt>Voxel-Based Morphometry (VBM)</dt>
+      <dd>A neuroimaging analysis technique that examines differences in the concentration or volume of gray matter and white matter across the brain. VBM compares brain scans between groups of individuals on a voxel-by-voxel basis, where a voxel is a three-dimensional unit of brain scan data comparable to a pixel in a photograph. Multiple studies cited on this site used VBM to identify structural brain differences in pedophilic men.</dd>
+    </div>
+    <div class="glossary-term">
+      <dt>Orbitofrontal Cortex</dt>
+      <dd>A region of the frontal lobe located just above the eye sockets that plays a central role in decision-making, impulse control, and the regulation of socially appropriate behavior. Structural and functional differences in the orbitofrontal cortex have been identified in pedophilic men who have committed contact offenses, and damage to this region has been associated with cases of acquired pedophilia.</dd>
+    </div>
+    <div class="glossary-term">
+      <dt>White Matter</dt>
+      <dd>The tissue in the brain consisting primarily of myelinated nerve fibers that transmit signals between different brain regions. White matter enables communication across neural networks. Reduced white matter volume in pedophilic men, particularly in tracts connecting regions involved in impulse control and sexual processing, has been interpreted as evidence of disrupted neural connectivity.</dd>
+    </div>
+    <div class="glossary-term">
+      <dt>Grooming</dt>
+      <dd>A behavioral process in which an individual builds trust and emotional connection with a child in order to lower the child's defenses and create opportunities for sexual abuse. Grooming is a hallmark of offense patterns consistent with pedophilic disorder, where sustained access to a specific type of victim is sought deliberately over time.</dd>
+    </div>
+    <div class="glossary-term">
+      <dt>Acquired Pedophilia</dt>
+      <dd>Pedophilic behavior that emerges in an adult who had no prior pedophilic attraction, following a brain injury or neurological disease. Documented cases have involved brain tumors, frontotemporal dementia, hippocampal sclerosis, and multiple sclerosis. These cases are rare but scientifically important because they demonstrate a causal link between specific brain regions and pedophilic behavior (Lopes et al., 2020).</dd>
+    </div>
+    <div class="glossary-term">
+      <dt>Opportunistic Offending</dt>
+      <dd>Child sexual abuse committed not out of a primary sexual attraction to children, but due to situational access, poor impulse control, substance disinhibition, antisocial personality traits, or a generalized pattern of sexual exploitation. Approximately 50% of child sexual abusers fall into this category rather than having pedophilic disorder (Tenbergen et al., 2015; Murray, 2000).</dd>
+    </div>
+  </dl>
+</section>
+
+<!-- MISCONCEPTIONS -->
+<section class="misconceptions-section" id="myths">
+  <div style="text-align:center; margin-bottom:3.5rem;">
+    <p class="section-label reveal">Myth vs. Fact</p>
+    <h2 class="section-title centered reveal">Common misconceptions, corrected</h2>
+    <p class="section-intro centered reveal">Public understanding of this topic is shaped more by media representation than by research. Here is what the peer-reviewed literature actually shows.</p>
+  </div>
+
+  <div class="misconceptions-grid">
+    <div class="myth-card reveal">
+      <span class="myth-label myth">Myth</span>
+      <h4>"All child molesters are pedophiles."</h4>
+      <p>Research consistently demonstrates that only approximately 50% of child sexual abusers have pedophilic disorder. The remaining half abuse children for opportunistic or situational reasons unrelated to a primary sexual attraction to children (Tenbergen et al., 2015; Murray, 2000).</p>
+    </div>
+    <div class="myth-card reveal">
+      <span class="myth-label fact">Fact</span>
+      <h4>The majority of pedophilic individuals never commit a sexual offense against a child.</h4>
+      <p>Having a pedophilic sexual preference does not automatically result in offending behavior. Many individuals with this attraction never act on it. Prevention programs in Germany have successfully recruited self-identified pedophilic individuals who sought help specifically to avoid causing harm (Tenbergen et al., 2015).</p>
+    </div>
+    <div class="myth-card reveal">
+      <span class="myth-label myth">Myth</span>
+      <h4>"Child sexual abusers are always strangers."</h4>
+      <p>In the vast majority of child sexual abuse cases, the perpetrator is known to the child. Most are family members, friends, neighbors, or trusted adults. The stranger-danger narrative describes a minority of real-world cases (Murray, 2000).</p>
+    </div>
+    <div class="myth-card reveal">
+      <span class="myth-label fact">Fact</span>
+      <h4>Pedophilia appears to have neurobiological origins.</h4>
+      <p>Consistent structural brain differences, including amygdala volume reductions and disrupted white matter connectivity, have been identified in pedophilic individuals across multiple independent studies. This evidence suggests the preference functions more like a neurodevelopmental condition than a deliberate choice (Tenbergen et al., 2015; Lopes et al., 2020).</p>
+    </div>
+    <div class="myth-card reveal">
+      <span class="myth-label myth">Myth</span>
+      <h4>"Pedophilia is always caused by having been abused as a child."</h4>
+      <p>While many pedophilic individuals report childhood sexual abuse, controlled studies find that the rates of abuse history are not dramatically different from control groups. A direct causal link from victimization to pedophilia has not been established (Freund et al., 1990, as cited in Murray, 2000).</p>
+    </div>
+    <div class="myth-card reveal">
+      <span class="myth-label fact">Fact</span>
+      <h4>Distinguishing the two concepts directly improves child protection.</h4>
+      <p>If prevention efforts only target identified pedophilic individuals, they miss the half of abusers who have no such diagnosis. Accurate conceptual distinctions allow for broader interventions that address opportunity reduction, situational risk, and the full range of pathways to child sexual abuse (Tenbergen et al., 2015; Murray, 2000).</p>
+    </div>
+  </div>
+</section>
+
+<!-- IMPLICATIONS -->
+<section class="implications-section">
+  <div style="text-align:center; margin-bottom:3.5rem;">
+    <p class="section-label reveal">Why This Matters</p>
+    <h2 class="section-title centered reveal" style="color:#fff;">The stakes of getting this distinction right</h2>
+    <p class="section-intro centered reveal">Conflating a preference with a behavior is not just imprecise. It actively undermines prevention, treatment, and the scientific understanding of child protection.</p>
+  </div>
+
+  <div class="implications-cards">
+    <div class="impl-card reveal">
+      <div class="impl-icon">&#128737;&#65039;</div>
+      <h4>Child Protection</h4>
+      <p>Assuming only pedophilic individuals abuse children leaves the majority of at-risk situations unaddressed. Effective child protection requires understanding the full range of pathways to abuse, including opportunistic offending by individuals with no sexual preference for children (Tenbergen et al., 2015; Murray, 2000).</p>
+    </div>
+    <div class="impl-card reveal">
+      <div class="impl-icon">&#9877;&#65039;</div>
+      <h4>Clinical Treatment</h4>
+      <p>Treating pedophilic disorder requires fundamentally different approaches than treating non-pedophilic sex offending. Accurate diagnosis allows clinicians to match individuals to appropriate interventions, including cognitive-behavioral therapy or pharmacological approaches targeting impulsivity (Tenbergen et al., 2015; Murray, 2000).</p>
+    </div>
+    <div class="impl-card reveal">
+      <div class="impl-icon">&#9878;&#65039;</div>
+      <h4>Legal and Forensic Questions</h4>
+      <p>Documented cases of acquired pedophilia, in which neurological disease produced pedophilic behavior that resolved after medical treatment, raise complex questions about criminal culpability. Neuroscience is increasingly informing how courts approach questions of intent, responsibility, and treatment versus punishment (Lopes et al., 2020).</p>
+    </div>
+  </div>
+</section>
+
+<!-- REFERENCES -->
+<section class="references-section" id="references">
+  <div class="references-inner">
+    <p class="section-label">Academic Sources</p>
+    <h2 class="section-title" style="color:#fff;">References</h2>
+    <p class="ref-intro">All content on this site is grounded in peer-reviewed research. The five primary sources below are listed in APA format. Additional studies are cited within the primary sources and noted in-text as "as cited in" accordingly.</p>
+
+    <ul class="ref-list">
+      <li>Lopes, P. M. G., Prado, C. S. C., &amp; de Oliveira-Souza, R. (2020). The neurology of acquired pedophilia. <em>Neurocase, 26</em>(2), 103-114. https://doi.org/10.1080/13554794.2020.1727929</li>
+      <li>Murray, J. B. (2000). Psychological profile of pedophiles and child molesters. <em>The Journal of Psychology, 134</em>(2), 211-224. https://doi.org/10.1080/00223980009600863</li>
+      <li>Tenbergen, G., Wittfoth, M., Frieling, H., Ponseti, J., Walter, M., Walter, H., Beier, K. M., Schiffer, B., &amp; Kruger, T. H. C. (2015). The neurobiology and psychology of pedophilia: Recent advances and challenges. <em>Frontiers in Human Neuroscience, 9</em>, 344. https://doi.org/10.3389/fnhum.2015.00344</li>
+      <li>Blanchard, R., Klassen, P., Dickey, R., Kuban, M. E., &amp; Blak, T. (2001). Sensitivity and specificity of the phallometric test for pedophilia in nonadmitting sex offenders. <em>Psychological Assessment, 13</em>(1), 118-126. https://doi.org/10.1037/1040-3590.13.1.118</li>
+      <li>Schiltz, K., Witzel, J., Northoff, G., Zierhut, K., Gubka, U., Fellmann, H., &amp; Bogerts, B. (2007). Brain pathology in pedophilic offenders: Evidence of volume reduction in the right amygdala and related diencephalic structures. <em>Archives of General Psychiatry, 64</em>(6), 737-746. https://doi.org/10.1001/archpsyc.64.6.737</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <p>Preference vs. Behavior: Understanding Pedophilia and Child Sexual Abuse</p>
+  <p style="margin-top:0.4rem;">Created as an educational psychology project. All content is grounded in peer-reviewed research. For educational purposes only.</p>
+</footer>
+
+<script>
+  const reveals = document.querySelectorAll('.reveal');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        setTimeout(() => entry.target.classList.add('visible'), 60);
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.06, rootMargin: '0px 0px -30px 0px' });
+  reveals.forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
