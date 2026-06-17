@@ -487,7 +487,7 @@
     padding: 1.5rem 1.75rem;
   }
   .decision-question { font-family: 'DM Serif Display', serif; font-size: 1.15rem; color: #fff; margin-bottom: 1rem; line-height: 1.3; }
-  .decision-buttons { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+  .decision-buttons { display: flex; gap: 0.75rem; flex-wrap: wrap; justify-content: center; }
   .decision-btn {
     padding: 0.55rem 1.25rem;
     border-radius: 8px;
@@ -509,7 +509,6 @@
   .decision-outcome {
     border-radius: 14px;
     padding: 1.75rem;
-    display: none;
   }
   .outcome-pedophilic { background: rgba(123,167,160,0.18); border: 1px solid rgba(123,167,160,0.4); }
   .outcome-opportunistic { background: rgba(232,168,56,0.12); border: 1px solid rgba(232,168,56,0.35); }
@@ -1460,14 +1459,53 @@
   <div class="references-inner">
     <p class="section-label">Academic Sources</p>
     <h2 class="section-title" style="color:#fff;">References</h2>
-    <p class="ref-intro">All content on this site is grounded in peer-reviewed research. The five primary sources below are listed in APA format. Additional studies are cited within the primary sources and noted in-text as "as cited in" accordingly.</p>
+    <p class="ref-intro">All factual claims on this site are grounded in peer-reviewed research. The five primary sources are listed below in APA format, followed by the secondary sources cited as "as cited in" throughout the site.</p>
 
+    <p style="font-size:0.7rem; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:var(--sage); margin-bottom:1rem; margin-top:2rem;">Primary Sources</p>
     <ul class="ref-list">
-      <li>Lopes, P. M. G., Prado, C. S. C., &amp; de Oliveira-Souza, R. (2020). The neurology of acquired pedophilia. <em>Neurocase, 26</em>(2), 103-114. https://doi.org/10.1080/13554794.2020.1727929</li>
-      <li>Murray, J. B. (2000). Psychological profile of pedophiles and child molesters. <em>The Journal of Psychology, 134</em>(2), 211-224. https://doi.org/10.1080/00223980009600863</li>
-      <li>Tenbergen, G., Wittfoth, M., Frieling, H., Ponseti, J., Walter, M., Walter, H., Beier, K. M., Schiffer, B., &amp; Kruger, T. H. C. (2015). The neurobiology and psychology of pedophilia: Recent advances and challenges. <em>Frontiers in Human Neuroscience, 9</em>, 344. https://doi.org/10.3389/fnhum.2015.00344</li>
-      <li>Blanchard, R., Klassen, P., Dickey, R., Kuban, M. E., &amp; Blak, T. (2001). Sensitivity and specificity of the phallometric test for pedophilia in nonadmitting sex offenders. <em>Psychological Assessment, 13</em>(1), 118-126. https://doi.org/10.1037/1040-3590.13.1.118</li>
-      <li>Schiltz, K., Witzel, J., Northoff, G., Zierhut, K., Gubka, U., Fellmann, H., &amp; Bogerts, B. (2007). Brain pathology in pedophilic offenders: Evidence of volume reduction in the right amygdala and related diencephalic structures. <em>Archives of General Psychiatry, 64</em>(6), 737-746. https://doi.org/10.1001/archpsyc.64.6.737</li>
+      <li>Lopes, P. M. G., Prado, C. S. C., &amp; de Oliveira-Souza, R. (2020). The neurology of acquired pedophilia. <em>Neurocase, 26</em>(2), 103–114. https://doi.org/10.1080/13554794.2020.1727929
+        <br><span style="font-size:0.78rem; color:rgba(255,255,255,0.42); display:block; margin-top:0.3rem;">Cited for: acquired pedophilia case series; orbitofrontal tumor cases; right frontotemporoinsular cortex findings; DSM-5 non-exclusive subtype prevalence; legal and forensic implications of neurological causation.</span>
+      </li>
+      <li>Murray, J. B. (2000). Psychological profile of pedophiles and child molesters. <em>The Journal of Psychology, 134</em>(2), 211–224. https://doi.org/10.1080/00223980009600863
+        <br><span style="font-size:0.78rem; color:rgba(255,255,255,0.42); display:block; margin-top:0.3rem;">Cited for: ~50% of abusers are non-pedophilic; alcohol involvement in ~50% of incidents; stranger-danger myth; personality profiles of both groups; grooming vs. opportunistic offense patterns; self-justification data; perpetrator relationship to victim; social skills deficits; AMA definition of child sexual abuse.</span>
+      </li>
+      <li>Tenbergen, G., Wittfoth, M., Frieling, H., Ponseti, J., Walter, M., Walter, H., Beier, K. M., Schiffer, B., &amp; Kruger, T. H. C. (2015). The neurobiology and psychology of pedophilia: Recent advances and challenges. <em>Frontiers in Human Neuroscience, 9</em>, 344. https://doi.org/10.3389/fnhum.2015.00344
+        <br><span style="font-size:0.78rem; color:rgba(255,255,255,0.42); display:block; margin-top:0.3rem;">Cited for: DSM-5 diagnostic criteria; neurodevelopmental origins of pedophilic preference; white matter disruption; amygdala volume findings; frontal lobe and behavioral disinhibition; temporal lobe and sexual preoccupation; fMRI pattern classification (Ponseti et al., 2012, as cited in); neurodevelopmental markers (handedness, stature, childhood head injury); 1–5% prevalence estimate; comorbidity rates in treatment samples; Prevention Project Dunkelfeld; non-offending with strong impulse regulation; cognitive-behavioral treatment outcomes.</span>
+      </li>
+      <li>Blanchard, R., Klassen, P., Dickey, R., Kuban, M. E., &amp; Blak, T. (2001). Sensitivity and specificity of the phallometric test for pedophilia in nonadmitting sex offenders. <em>Psychological Assessment, 13</em>(1), 118–126. https://doi.org/10.1037/1040-3590.13.1.118
+        <br><span style="font-size:0.78rem; color:rgba(255,255,255,0.42); display:block; margin-top:0.3rem;">Cited for: phallometric assessment methodology; ~50% overlap statistic between pedophilia and child sexual abuse in the Venn diagram.</span>
+      </li>
+      <li>Schiltz, K., Witzel, J., Northoff, G., Zierhut, K., Gubka, U., Fellmann, H., &amp; Bogerts, B. (2007). Brain pathology in pedophilic offenders: Evidence of volume reduction in the right amygdala and related diencephalic structures. <em>Archives of General Psychiatry, 64</em>(6), 737–746. https://doi.org/10.1001/archpsyc.64.6.737
+        <br><span style="font-size:0.78rem; color:rgba(255,255,255,0.42); display:block; margin-top:0.3rem;">Cited for: right amygdala volume reduction finding; diencephalic structural differences; timeline milestone (2007).</span>
+      </li>
+    </ul>
+
+    <p style="font-size:0.7rem; font-weight:700; letter-spacing:0.15em; text-transform:uppercase; color:var(--sage); margin-bottom:1rem; margin-top:2.5rem;">Secondary Sources (cited as "as cited in" via primary sources above)</p>
+    <ul class="ref-list">
+      <li>Burns, J. M., &amp; Swerdlow, R. H. (2003). Right orbitofrontal tumor with pedophilia symptom and constructional apraxia sign. <em>Archives of Neurology, 60</em>(3), 437–440. [As cited in Lopes et al., 2020]
+        <br><span style="font-size:0.78rem; color:rgba(255,255,255,0.42); display:block; margin-top:0.3rem;">Cited for: the orbitofrontal tumor case in which pedophilic behavior emerged and resolved twice with tumor growth and resection.</span>
+      </li>
+      <li>Cantor, J. M., Kabani, N., Christensen, B. K., Zipursky, R. B., Barbaree, H. E., Dickey, R., … &amp; Blanchard, R. (2008). Cerebral white matter deficiencies in pedophilic men. <em>Journal of Psychiatric Research, 42</em>(3), 167–183. [As cited in Tenbergen et al., 2015]
+        <br><span style="font-size:0.78rem; color:rgba(255,255,255,0.42); display:block; margin-top:0.3rem;">Cited for: reduced white matter volume in fiber tracts connecting impulse control and sexual processing regions.</span>
+      </li>
+      <li>Cantor, J. M., Blanchard, R., Robichaud, L. K., &amp; Christensen, B. K. (2005). Quantitative reanalysis of aggregate data on IQ in sexual offenders. <em>Psychological Bulletin, 131</em>(4), 555–568. [As cited in Tenbergen et al., 2015]
+        <br><span style="font-size:0.78rem; color:rgba(255,255,255,0.42); display:block; margin-top:0.3rem;">Cited for: IQ range of 90–95 associated with pedophilia and sexual offending against children; correlation of lower IQ with younger victim age.</span>
+      </li>
+      <li>Freund, K., Watson, R., &amp; Dickey, R. (1990). Does sexual abuse in childhood cause pedophilia? An exploratory study. <em>Archives of Sexual Behavior, 19</em>(6), 557–568. [As cited in Murray, 2000]
+        <br><span style="font-size:0.78rem; color:rgba(255,255,255,0.42); display:block; margin-top:0.3rem;">Cited for: absence of established causal link between childhood sexual victimization and adult pedophilia; abuse history rates not dramatically higher in pedophilic than control groups.</span>
+      </li>
+      <li>Levin, S. M., &amp; Stava, L. (1987). Personality characteristics of sex offenders: A review. <em>Archives of Sexual Behavior, 16</em>(1), 57–79. [As cited in Murray, 2000]
+        <br><span style="font-size:0.78rem; color:rgba(255,255,255,0.42); display:block; margin-top:0.3rem;">Cited for: Eysenck Personality Questionnaire findings; introversion, depression, and emotional immaturity in pedophilic individuals.</span>
+      </li>
+      <li>Oberholser, J. C., &amp; Beck, S. (1986). Multimethod assessment of rapists, child molesters, and three control groups on behavioral and psychological measures. <em>Journal of Consulting and Clinical Psychology, 54</em>(5), 682–687. [As cited in Murray, 2000]
+        <br><span style="font-size:0.78rem; color:rgba(255,255,255,0.42); display:block; margin-top:0.3rem;">Cited for: fear of negative evaluation, unassertiveness, and social ineptitude in child molesters compared to rapists and controls.</span>
+      </li>
+      <li>Ponseti, J., Granert, O., Jansen, O., Wolff, S., Beier, K., Neutze, J., … &amp; Bosinski, H. (2012). Assessment of pedophilia using hemodynamic brain response to sexual stimuli. <em>Archives of General Psychiatry, 69</em>(2), 187–194. [As cited in Tenbergen et al., 2015]
+        <br><span style="font-size:0.78rem; color:rgba(255,255,255,0.42); display:block; margin-top:0.3rem;">Cited for: fMRI pattern classification achieving 95% accuracy, 100% specificity, 88% sensitivity in distinguishing pedophilic from non-pedophilic men.</span>
+      </li>
+      <li>Rada, R. T. (1976). Alcoholism and the child molester. <em>Annals of the New York Academy of Sciences, 273</em>, 492–496. [As cited in Murray, 2000]
+        <br><span style="font-size:0.78rem; color:rgba(255,255,255,0.42); display:block; margin-top:0.3rem;">Cited for: ~30% of 203 incarcerated child molesters drinking heavily at the time of the offense; alcohol as a disinhibitory factor in approximately 50% of incidents.</span>
+      </li>
     </ul>
   </div>
 </section>
@@ -1491,44 +1529,56 @@
   reveals.forEach(el => observer.observe(el));
 
   // DECISION TREE
-  function show(id) {
+  const ALL_DT_STEPS = ['dt-step-1a','dt-step-1b','dt-step-2a-yes','dt-step-2a-no','dt-step-3a-yes','dt-step-3a-no','dt-step-2b-yes','dt-step-2b-noantisocial','dt-step-3b-yes','dt-step-3b-no'];
+
+  function dtShow(id) {
     const el = document.getElementById(id);
-    if (el) { el.style.display = 'block'; el.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); }
+    if (!el) return;
+    el.style.display = 'block';
+    setTimeout(() => el.scrollIntoView({ behavior: 'smooth', block: 'nearest' }), 50);
   }
+
+  function dtLock(nodeId) {
+    const node = document.getElementById(nodeId);
+    if (node) node.querySelectorAll('.decision-btn').forEach(b => { b.disabled = true; b.style.opacity = '0.45'; b.style.cursor = 'default'; });
+  }
+
   function dtNext(step, choice) {
     if (step === 0) {
-      document.getElementById('dt-step-0').querySelectorAll('.decision-btn').forEach(b => b.disabled = true);
-      if (choice === 'yes') show('dt-step-1a');
-      else show('dt-step-1b');
+      dtLock('dt-step-0');
+      if (choice === 'yes') dtShow('dt-step-1a');
+      else dtShow('dt-step-1b');
     } else if (step === '1a') {
-      document.getElementById('dt-step-1a').querySelectorAll('.decision-btn').forEach(b => b.disabled = true);
-      if (choice === 'yes') show('dt-step-2a-yes');
-      else show('dt-step-2a-no');
-      document.getElementById('dt-reset-btn').style.display = 'inline-block';
+      dtLock('dt-step-1a');
+      if (choice === 'yes') { dtShow('dt-step-2a-yes'); dtShowReset(); }
+      else dtShow('dt-step-2a-no');
     } else if (step === '2a') {
-      document.getElementById('dt-step-2a-no').querySelectorAll('.decision-btn').forEach(b => b.disabled = true);
-      if (choice === 'yes') show('dt-step-3a-yes');
-      else show('dt-step-3a-no');
+      dtLock('dt-step-2a-no');
+      if (choice === 'yes') dtShow('dt-step-3a-yes');
+      else dtShow('dt-step-3a-no');
+      dtShowReset();
     } else if (step === '1b') {
-      document.getElementById('dt-step-1b').querySelectorAll('.decision-btn').forEach(b => b.disabled = true);
-      if (choice === 'yes') show('dt-step-2b-yes');
-      else show('dt-step-2b-noantisocial');
-      document.getElementById('dt-reset-btn').style.display = 'inline-block';
+      dtLock('dt-step-1b');
+      if (choice === 'yes') dtShow('dt-step-2b-yes');
+      else { dtShow('dt-step-2b-noantisocial'); dtShowReset(); }
     } else if (step === '2b') {
-      document.getElementById('dt-step-2b-yes').querySelectorAll('.decision-btn').forEach(b => b.disabled = true);
-      if (choice === 'yes') show('dt-step-3b-yes');
-      else show('dt-step-3b-no');
-    }
-    if (['dt-step-2a-yes','dt-step-3a-yes','dt-step-3a-no','dt-step-2b-noantisocial','dt-step-3b-yes','dt-step-3b-no'].some(id => document.getElementById(id) && document.getElementById(id).style.display !== 'none')) {
-      document.getElementById('dt-reset-btn').style.display = 'inline-block';
+      dtLock('dt-step-2b-yes');
+      if (choice === 'yes') dtShow('dt-step-3b-yes');
+      else dtShow('dt-step-3b-no');
+      dtShowReset();
     }
   }
+
+  function dtShowReset() {
+    document.getElementById('dt-reset-btn').style.display = 'inline-block';
+  }
+
   function dtReset() {
-    ['dt-step-1a','dt-step-1b','dt-step-2a-yes','dt-step-2a-no','dt-step-3a-yes','dt-step-3a-no','dt-step-2b-yes','dt-step-2b-noantisocial','dt-step-3b-yes','dt-step-3b-no'].forEach(id => {
+    ALL_DT_STEPS.forEach(id => {
       const el = document.getElementById(id);
       if (el) el.style.display = 'none';
     });
-    document.querySelectorAll('.decision-btn').forEach(b => b.disabled = false);
+    document.querySelectorAll('.decision-btn').forEach(b => { b.disabled = false; b.style.opacity = ''; b.style.cursor = ''; });
     document.getElementById('dt-reset-btn').style.display = 'none';
     document.getElementById('dt-step-0').scrollIntoView({ behavior: 'smooth', block: 'nearest' });
   }
